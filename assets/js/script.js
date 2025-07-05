@@ -1,7 +1,8 @@
+// Aquest script només gestiona l'efecte d'aparició dels elements en fer scroll.
+// S'ha eliminat la funció que donava problemes.
+
 document.addEventListener('DOMContentLoaded', function() {
     
-    // --- LÒGICA PER A L'EFECTE D'APARICIÓ AMB SCROLL ---
-    // Aquesta part funciona correctament i la mantenim.
     try {
         const revealElements = document.querySelectorAll('.scroll-reveal');
         if (revealElements.length > 0) {
@@ -24,28 +25,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     } catch (error) {
         console.error("Error en la función de scroll-reveal:", error);
-    }
-
-    // --- SCRIPT SIMPLIFICAT I ROBUST PER ACOLORIR NOMÉS APÒSTROFS ---
-    // Tornem a una solució més simple i segura per evitar errors.
-    try {
-        const colorizeApostrophes = () => {
-            const elementsToColorize = document.querySelectorAll('.colorize-accents');
-            if (elementsToColorize.length === 0) return;
-
-            // Expressió regular per trobar només l'apòstrof recte (') i l'arrissat (’).
-            const apostropheRegex = /['’]/g;
-
-            elementsToColorize.forEach(element => {
-                // Treballem directament amb l'HTML intern. Per a aquest cas simple, és segur.
-                // Reemplacem cada apòstrof trobat per ell mateix embolicat en un span de color.
-                element.innerHTML = element.innerHTML.replace(apostropheRegex, `<span class="neon-pink-text">$&</span>`);
-            });
-        };
-
-        colorizeApostrophes();
-
-    } catch (error) {
-        console.error("Error en la función colorizeApostrophes:", error);
     }
 });
