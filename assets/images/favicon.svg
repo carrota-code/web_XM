@@ -1,0 +1,10 @@
+<svg width="32" height="32" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <!-- 
+        Favicon per a la marca X'M.
+        Representa l'apòstrof característic amb el color rosa neó.
+    -->
+    <path 
+        d="M 50,15 C 40,35 60,35 50,55 Z" 
+        fill="#FF007F" 
+    />
+</svg>
