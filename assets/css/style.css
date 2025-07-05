@@ -34,7 +34,7 @@ h1, h2, h3, .font-title {
 
 .animate-fade-in-up {
     animation: fadeInUp 1s ease-out 0.5s forwards;
-    opacity: 0; /* Comença invisible */
+    opacity: 0;
 }
 
 /* Estils per a l'efecte d'aparició amb scroll */
@@ -49,7 +49,44 @@ h1, h2, h3, .font-title {
     transform: translateY(0);
 }
 
-/* Estils per al nou peu de pàgina */
-footer a {
-    text-decoration: none;
+/* Estils per a les finestres modals */
+#modal-overlay {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.95);
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    z-index: 60;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.modal-content.active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    color: #6b7280;
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+.modal-close:hover {
+    color: #fff;
 }
