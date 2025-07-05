@@ -90,3 +90,34 @@ h1, h2, h3, .font-title {
 .modal-close:hover {
     color: #fff;
 }
+.formulari-contacte {
+  max-width: 600px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formulari-contacte input,
+.formulari-contacte textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.formulari-contacte button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.formulari-contacte button:hover {
+  background-color: #333;
+}
