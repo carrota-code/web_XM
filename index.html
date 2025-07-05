@@ -1,109 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ca" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web XM</title>
+    <title>X'M - L'art de portar un secret</title>
+
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<body class="antialiased">
 
-<body>
-    <header class="header">
-        <div class="container">
-            <h1 class="logo">Web XM</h1>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#hero">Inicio</a></li>
-                    <li><a href="#about">Nosotros</a></li>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#portfolio">Portafolio</a></li>
-                    <li><a href="#contact">Contacto</a></li>
+    <header class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-50 backdrop-blur-sm transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-3xl font-bold font-title">X<span class="neon-pink-text">'</span>M</a>
+            <div class="flex items-center">
+                <ul class="hidden md:flex items-center space-x-8 text-sm uppercase tracking-widest">
+                    <li><a href="#manifesto" class="hover:text-white transition-colors duration-300" data-lang="nav_manifesto">Manifest</a></li>
+                    <li><a href="#collection" class="hover:text-white transition-colors duration-300" data-lang="nav_collection">Col·lecció</a></li>
+                    <li><a href="#designer" class="hover:text-white transition-colors duration-300" data-lang="nav_designer">Creador</a></li>
+                    <li><a href="#craftsmanship" class="hover:text-white transition-colors duration-300" data-lang="nav_craftsmanship">Artesania</a></li>
                 </ul>
-            </nav>
-        </div>
+                <div id="lang-switcher" class="relative ml-8">
+                    <button id="lang-button" class="flex items-center text-sm uppercase tracking-widest hover:text-white transition-colors">
+                        <span id="current-lang-text">CAT</span>
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <ul id="lang-menu" class="absolute right-0 mt-2 w-32 bg-black bg-opacity-90 rounded-md shadow-lg hidden py-1">
+                        <li><a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800" data-lang-id="ca">Català</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800" data-lang-id="es">Español</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800" data-lang-id="fr">Français</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800" data-lang-id="it">Italiano</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800" data-lang-id="en">English</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <section id="hero" class="hero">
-        <div class="container">
-            <h2>Bienvenido a Web XM</h2>
-            <p>Tu solución ideal para presencia online.</p>
-            <a href="#contact" class="btn btn-primary">Contáctanos</a>
-        </div>
-    </section>
+    <main>
+        <section id="hero" class="h-screen w-full flex items-center justify-center relative text-center text-white overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="assets/images/hero-bg.jpg" alt="Fons abstracte fosc" class="w-full h-full object-cover opacity-30">
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+            </div>
+            <div class="relative z-10 p-6">
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold font-title mb-4 animate-fade-in-down">X<span class="neon-pink-text">'</span>M</h1>
+                <p class="text-xl md:text-2xl font-light tracking-widest animate-fade-in-up" data-lang="hero_slogan">L'art de portar un secret.</p>
+            </div>
+        </section>
 
-    <section id="about" class="about section-padding">
-        <div class="container">
-            <h2>Sobre Nosotros</h2>
-            <p>Somos un equipo dedicado a crear experiencias web increíbles.</p>
-        </div>
-    </section>
+        <section id="manifesto" class="py-20 md:py-32 bg-[#1a1a1a]">
+            <div class="container mx-auto px-6 max-w-3xl text-center scroll-reveal">
+                <h2 class="text-4xl md:text-5xl font-title mb-8" data-lang="manifesto_title">El Nostre Manifest</h2>
+                <p class="text-lg md:text-xl leading-relaxed text-gray-300" data-lang="manifesto_text">X'M neix a la intersecció de l'artesania i el concepte. Creiem en un luxe que no crida, sinó que xiuxiueja. En peces que no només vesteixen, sinó que dialoguen amb qui les porta. Cada disseny és una declaració d'intencions: una fusió d'elegància atemporal i una audàcia que desafia el present. No creem accessoris, creem secrets per compartir.</p>
+            </div>
+        </section>
 
-    <section id="services" class="services section-padding">
-        <div class="container">
-            <h2>Nuestros Servicios</h2>
-            <div class="service-grid">
-                <div class="service-item">
-                    <h3>Diseño Web</h3>
-                    <p>Creamos diseños modernos y responsivos.</p>
+        <section id="collection" class="py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 scroll-reveal">
+                    <h2 class="text-4xl md:text-5xl font-title mb-4" data-lang="collection_title">Col·lecció Sphère</h2>
+                    <p class="text-gray-400 max-w-2xl mx-auto" data-lang="collection_subtitle">La nostra primera col·lecció explora la forma perfecta: l'esfera. Un univers tancat que amaga una funcionalitat íntima i radical.</p>
                 </div>
-                <div class="service-item">
-                    <h3>Desarrollo Web</h3>
-                    <p>Construimos sitios funcionales y escalables.</p>
-                </div>
-                <div class="service-item">
-                    <h3>SEO</h3>
-                    <p>Ayudamos a que tu sitio sea encontrado.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                    <div class="text-center scroll-reveal">
+                        <div class="bg-[#1a1a1a] p-8 rounded-lg mb-6 aspect-square flex items-center justify-center"><img src="assets/images/sphere_noir.png" alt="Bolso Sphère Noir" class="max-w-full max-h-full object-contain rounded-md transform hover:scale-105 transition-transform duration-500"></div>
+                        <h3 class="text-2xl font-title mb-2">Sphère Noir</h3>
+                        <p class="text-gray-400 px-4" data-lang="noir_desc">Més que un bolso, una declaració. Revestit de la més suau pell de conill negra, és una experiència tàctil inoblidable.</p>
+                    </div>
+                    <div class="text-center scroll-reveal" style="transition-delay: 0.2s;">
+                        <div class="bg-[#1a1a1a] p-8 rounded-lg mb-6 aspect-square flex items-center justify-center"><img src="assets/images/sphere_icon.png" alt="Bolso Sphère Icon" class="max-w-full max-h-full object-contain rounded-md transform hover:scale-105 transition-transform duration-500"></div>
+                        <h3 class="text-2xl font-title mb-2">Sphère Icon</h3>
+                        <p class="text-gray-400 px-4" data-lang="icon_desc">Un disseny gràfic que reinterpreta un clàssic universal sota el prisma del luxe, alternant pell napa blanca i ant negre.</p>
+                    </div>
+                    <div class="text-center scroll-reveal" style="transition-delay: 0.4s;">
+                         <div class="bg-[#1a1a1a] p-8 rounded-lg mb-6 aspect-square flex items-center justify-center"><img src="assets/images/sphere_lucid.png" alt="Bolso Sphère Lucid" class="max-w-full max-h-full object-contain rounded-md transform hover:scale-105 transition-transform duration-500"></div>
+                        <h3 class="text-2xl font-title mb-2">Sphère Lucid</h3>
+                        <p class="text-gray-400 px-4" data-lang="lucid_desc">Un exercici d'honestedat radical. Una esfera d'acrílic transparent per a la dona que no té res a amagar.</p>
+                    </div>
+                    <div class="text-center scroll-reveal">
+                        <div class="bg-[#1a1a1a] p-8 rounded-lg mb-6 aspect-square flex items-center justify-center"><img src="assets/images/sphere_strike.png" alt="Bolso Sphère Strike" class="max-w-full max-h-full object-contain rounded-md transform hover:scale-105 transition-transform duration-500"></div>
+                        <h3 class="text-2xl font-title mb-2">Sphère Strike</h3>
+                        <p class="text-gray-400 px-4" data-lang="strike_desc">Una picada d'ullet a la cultura pop. Pell de xarol negre d'alta brillantor que evoca una bola de bitlles de luxe.</p>
+                    </div>
+                    <div class="text-center scroll-reveal" style="transition-delay: 0.2s;">
+                        <div class="bg-[#1a1a1a] p-8 rounded-lg mb-6 aspect-square flex items-center justify-center"><img src="assets/images/sphere_niu.png" alt="Bolso Sphère Niu" class="max-w-full max-h-full object-contain rounded-md transform hover:scale-105 transition-transform duration-500"></div>
+                        <h3 class="text-2xl font-title mb-2">Sphère Niu</h3>
+                        <p class="text-gray-400 px-4" data-lang="niu_desc">Un retorn a l'essència, embolicat en fil de llana merino XXL. El luxe és calidesa i confort.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="portfolio" class="portfolio section-padding">
-        <div class="container">
-            <h2>Nuestro Portafolio</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/300" alt="Proyecto 1">
-                    <h3>Proyecto Uno</h3>
+        <section id="designer" class="py-20 md:py-32 bg-[#1a1a1a]">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <div class="scroll-reveal">
+                    <div class="bg-black p-4 rounded-lg shadow-2xl">
+                        <img src="https://placehold.co/800x1000/111111/eaeaea?text=Gemma" alt="Retrat de la dissenyadora Gemma" class="w-full h-auto object-cover rounded-md">
+                    </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/300" alt="Proyecto 2">
-                    <h3>Proyecto Dos</h3>
+                <div class="scroll-reveal" style="transition-delay: 0.2s;">
+                    <h2 class="text-4xl md:text-5xl font-title mb-6" data-lang="designer_title">La Visió d'una Creadora</h2>
+                    <p class="text-lg text-gray-300 mb-4 leading-relaxed" data-lang="designer_quote1">"Sempre m'ha obsessionat la relació entre el cos i l'objecte. Un bolso no és només un contenidor, és un company. Amb Sphère, volia explorar una connexió més profunda, gairebé simbiòtica."</p>
+                    <p class="text-lg text-gray-300 leading-relaxed" data-lang="designer_quote2">Per a mi, el disseny ha de provocar una emoció, ha de ser una peça de conversa. X'M és el resultat d'aquesta cerca: objectes bells amb una ànima inesperada.</p>
+                    <p class="mt-6 font-title text-xl">- Gemma</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="contact section-padding">
-        <div class="container">
-            <h2>Contacto</h2>
-            <p>¿Tienes alguna pregunta o proyecto en mente? ¡Contáctanos!</p>
-            <form action="https://formspree.io/f/xnnvyzpb" method="POST">
-                <div class="form-group">
-                    <label for="name">Nombre</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
+        <section id="craftsmanship" class="py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-3xl mx-auto scroll-reveal">
+                    <h2 class="text-4xl md:text-5xl font-title mb-6" data-lang="craftsmanship_title">L'Ànima de l'Artesania</h2>
+                    <p class="text-lg text-gray-300 leading-relaxed" data-lang="craftsmanship_text">Cada peça X'M es construeix amb paciència i precisió en tallers artesans locals. Seleccionem només els millors materials: pells de napa suau, acrílics polits a mà i llanes pures. La nostra cremallera, amb el seu distintiu rosa neó, no és només un tancament, és una joia dissenyada a mida i banyada en or per garantir una durabilitat i un lliscar perfectes.</p>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" name="_replyto" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Mensaje</label>
-                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-            </form>
-        </div>
-    </section>
+            </div>
+        </section>
+    </main>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Web XM. Todos los derechos reservados.</p>
+    <footer class="py-16 bg-black text-gray-400">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-3xl font-bold font-title text-white mb-4">X<span class="neon-pink-text">'</span>M</h3>
+                    <p class="text-sm max-w-md" data-lang="footer_mission">Creant objectes de luxe amb una ànima inesperada. Disseny conceptual i artesania per a la dona moderna.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold uppercase tracking-widest mb-4 text-white" data-lang="footer_help">Ajuda</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition-colors modal-trigger" data-modal="contact" data-lang="footer_contact">Contacte</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors modal-trigger" data-modal="faq" data-lang="footer_faq">Preguntes Freqüents (FAQ)</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors modal-trigger" data-modal="shipping" data-lang="footer_shipping">Enviaments i Devolucions</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors modal-trigger" data-modal="care" data-lang="footer_care">Cura del Producte</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold uppercase tracking-widest mb-4 text-white" data-lang="footer_company">Empresa</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition-colors modal-trigger" data-modal="story" data-lang="footer_story">La Nostra Història</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors modal-trigger" data-modal="sustainability" data-lang="footer_sustainability">Sostenibilitat</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors modal-trigger" data-modal="press" data-lang="footer_press">Premsa</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-sm text-gray-500">
+                <p data-lang="footer_copyright">© 2025 X'M. Tots els drets reservats.</p>
+            </div>
         </div>
     </footer>
 
+    <div id="modal-overlay" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden"></div>
+    
+    <div id="contact-modal" class="modal-content hidden">
+        <button class="modal-close">&times;</button>
+        <h2 class="text-3xl font-title mb-6" data-lang="contact_title">Contacte</h2>
+        <form id="contact-form" action="https://formspree.io/f/xnnvyzpb" method="POST">
+            <div class="mb-4">
+                <label for="name" class="block text-sm font-medium text-gray-300" data-lang="contact_name">Nom</label>
+                <input type="text" id="name" name="name" required class="mt-1 block w-full bg-gray-800 border-gray-700 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-pink-500 focus:border-pink-500">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-300" data-lang="contact_email">Email</label>
+                <input type="email" id="email" name="email" required class="mt-1 block w-full bg-gray-800 border-gray-700 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-pink-500 focus:border-pink-500">
+            </div>
+            <div class="mb-6">
+                <label for="message" class="block text-sm font-medium text-gray-300" data-lang="contact_message">Missatge</label>
+                <textarea id="message" name="message" rows="4" required class="mt-1 block w-full bg-gray-800 border-gray-700 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-pink-500 focus:border-pink-500"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-pink-600 text-white font-bold py-3 px-4 rounded-md hover:bg-pink-700 transition-colors" data-lang="contact_send">Enviar Missatge</button>
+        </form>
+    </div>
+
+    <div id="faq-modal" class="modal-content hidden">
+        <button class="modal-close">&times;</button>
+        <h2 class="text-3xl font-title mb-6" data-lang="faq_title">Preguntes Freqüents</h2>
+        <div class="space-y-4 text-gray-300" data-lang="faq_content">
+            <p><strong>Quines són les opcions d'enviament?</strong><br>Oferim enviament estàndard i exprés a tot el món. Els costos i temps de lliurament es calculen a la pantalla de pagament.</p>
+            <p><strong>Puc retornar un producte?</strong><br>Sí, acceptem devolucions dins dels 14 dies posteriors a la recepció de la comanda. El producte ha d'estar en perfectes condicions i amb el seu embalatge original.</p>
+        </div>
+    </div>
+    
+    <div id="shipping-modal" class="modal-content hidden">
+        <button class="modal-close">&times;</button>
+        <h2 class="text-3xl font-title mb-6" data-lang="shipping_title">Enviaments i Devolucions</h2>
+        <div class="space-y-4 text-gray-300" data-lang="shipping_content">
+            <p>Totes les comandes es processen en un termini de 2 dies laborables. Els enviaments estàndard triguen entre 5-7 dies laborables, i els exprés entre 1-3 dies. Rebràs un número de seguiment un cop la teva comanda hagi estat enviada. Per a devolucions, si us plau, contacta'ns a través del nostre formulari de contacte per iniciar el procés.</p>
+        </div>
+    </div>
+
+    <div id="care-modal" class="modal-content hidden">
+        <button class="modal-close">&times;</button>
+        <h2 class="text-3xl font-title mb-6" data-lang="care_title">Cura del Producte</h2>
+        <div class="space-y-4 text-gray-300" data-lang="care_content">
+            <p>Les nostres peces estan fetes amb materials de la més alta qualitat. Per mantenir la seva bellesa, evita l'exposició prolongada a la llum solar directa i a la humitat. Guarda el teu bolso a la seva bossa guardapols quan no l'utilitzis. Per a la neteja, consulta un especialista en tractament de pells.</p>
+        </div>
+    </div>
+
+    <div id="story-modal" class="modal-content hidden">
+        <button class="modal-close">&times;</button>
+        <h2 class="text-3xl font-title mb-6" data-lang="story_title">La Nostra Història</h2>
+        <div class="space-y-4 text-gray-300" data-lang="story_content">
+            <p>X'M va néixer d'un desig: el de crear objectes que no només fossin bells, sinó que tinguessin una ànima. Fundada per Gemma Juan Garcia, la marca busca desafiar la percepció tradicional del luxe, fusionant l'art conceptual amb l'artesania més meticulosa. Cada col·lecció és un capítol d'aquesta història, una exploració de formes, textures i emocions.</p>
+        </div>
+    </div>
+
+    <div id="sustainability-modal" class="modal-content hidden">
+        <button class="modal-close">&times;</button>
+        <h2 class="text-3xl font-title mb-6" data-lang="sustainability_title">Sostenibilitat</h2>
+        <div class="space-y-4 text-gray-300" data-lang="sustainability_content">
+            <p>Estem compromesos amb un luxe conscient. Treballem amb tallers locals per minimitzar la nostra petjada de carboni i garantir condicions laborals justes. Prioritzem l'ús de materials responsables i busquem constantment maneres d'innovar en sostenibilitat, des del nostre packaging reciclable fins a la selecció de pells de proveïdors certificats.</p>
+        </div>
+    </div>
+
+    <div id="press-modal" class="modal-content hidden">
+        <button class="modal-close">&times;</button>
+        <h2 class="text-3xl font-title mb-6" data-lang="press_title">Premsa</h2>
+        <div class="space-y-4 text-gray-300" data-lang="press_content">
+            <p>Per a consultes de premsa, entrevistes o sol·licituds de material gràfic, si us plau, contacteu amb el nostre departament de comunicació a <a href="mailto:press@xm-brand.com" class="text-pink-500 hover:underline">press@xm-brand.com</a>.</p>
+        </div>
+    </div>
+    
     <script src="assets/js/script.js"></script>
 </body>
-
 </html>
