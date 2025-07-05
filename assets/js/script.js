@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll();
 
-    // --- NOVA LÒGICA (ROBUSTA) PER ACOLORIR NOMÉS SIGNES DE PUNTUACIÓ ---
+    // --- LÒGICA CORREGIDA I ROBUSTA PER ACOLORIR NOMÉS SIGNES DE PUNTUACIÓ ---
     const colorizePunctuation = () => {
         const elementsToColorize = document.querySelectorAll('.colorize-accents');
 
