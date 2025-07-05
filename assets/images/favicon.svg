@@ -4,6 +4,7 @@
         Representa el logo "X'M" amb l'apòstrof en rosa neó.
         S'ha afegit un fons circular blanc per garantir la visibilitat
         en pestanyes de navegador clares i fosques.
+        Versió amb les lletres més juntes (kerning ajustat).
     -->
     <style>
       .logo-text { 
@@ -18,7 +19,7 @@
 
     <text x="50" y="55" class="logo-text">
         <tspan fill="#111111">X</tspan>
-        <tspan fill="#FF007F" dx="-0.05em">'</tspan>
-        <tspan fill="#111111" dx="-0.05em">M</tspan>
+        <tspan fill="#FF007F" dx="-0.15em">'</tspan>
+        <tspan fill="#111111" dx="-0.15em">M</tspan>
     </text>
 </svg>
