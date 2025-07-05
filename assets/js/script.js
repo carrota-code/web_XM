@@ -121,7 +121,6 @@ document.addEventListener('DOMContentLoaded', function() {
             langMenu.classList.add('hidden');
         }
     });
-
     langMenu.addEventListener('click', (e) => {
         e.preventDefault();
         const selectedLangId = e.target.getAttribute('data-lang-id');
@@ -130,7 +129,6 @@ document.addEventListener('DOMContentLoaded', function() {
             langMenu.classList.add('hidden');
         }
     });
-
     function setLanguage(lang) {
         document.documentElement.lang = lang;
         currentLangText.textContent = lang.toUpperCase();
@@ -155,7 +153,6 @@ document.addEventListener('DOMContentLoaded', function() {
             openModal(modal);
         });
     });
-
     function openModal(modal) {
         if (!modal) return;
         modalOverlay.classList.remove('hidden');
@@ -178,24 +175,38 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.modal-close').forEach(btn => {
         btn.addEventListener('click', closeModal);
     });
-
     // --- LÒGICA DEL FORMULARI DE CONTACTE ---
     const contactForm = document.getElementById('contact-form');
-    contactForm.addEventListener('submit', function(e) {
+    contactForm.addEventListener('submit', async function(e) { // Usar async para await fetch
         e.preventDefault();
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
         
-        const subject = `Missatge de contacte de ${name}`;
-        const body = `Nom: ${name}\nEmail: ${email}\n\nMissatge:\n${message}`;
-        
-        window.location.href = `mailto:jordibabi@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        
-        closeModal();
+        const formData = new FormData(contactForm); // Recoge los datos del formulario
+
+        try {
+            const response = await fetch("https://formspree.io/f/xnnvyzpb", { // URL de Formspree
+                method: "POST",
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                alert("Missatge enviat amb èxit!"); // Mensaje de éxito
+                contactForm.reset(); // Limpia el formulario
+                closeModal();
+            } else {
+                const data = await response.json();
+                if (data.errors) {
+                    alert(data.errors.map(error => error.message).join(", "));
+                } else {
+                    alert("Hi ha hagut un error en enviar el missatge.");
+                }
+            }
+        } catch (error) {
+            alert("Hi ha hagut un error de xarxa en enviar el missatge.");
+        }
     });
-
-
     // --- LÒGICA D'ANIMACIONS ---
     const revealElements = document.querySelectorAll('.scroll-reveal');
     const isElementInViewport = (el) => {
@@ -216,4 +227,3 @@ document.addEventListener('DOMContentLoaded', function() {
     revealOnScroll();
 
 });
-
