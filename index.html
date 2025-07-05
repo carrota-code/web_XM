@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>X'M - L'art de portar un secret</title>
 
+    <!-- ===== FAVICON ===== -->
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
     
+    <!-- Tailwind CSS (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
     
+    <!-- Fonts de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     
+    <!-- Enllaç al teu arxiu d'estil personalitzat -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="antialiased">
 
+    <!-- ===== NAVEGACIÓ ===== -->
     <header class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-50 backdrop-blur-sm transition-all duration-300">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#hero" class="text-3xl font-bold font-title">X<span class="neon-pink-text">'</span>M</a>
@@ -27,6 +32,7 @@
                     <li><a href="#designer" class="hover:text-white transition-colors duration-300" data-lang="nav_designer">Creador</a></li>
                     <li><a href="#craftsmanship" class="hover:text-white transition-colors duration-300" data-lang="nav_craftsmanship">Artesania</a></li>
                 </ul>
+                <!-- Selector d'idioma -->
                 <div id="lang-switcher" class="relative ml-8">
                     <button id="lang-button" class="flex items-center text-sm uppercase tracking-widest hover:text-white transition-colors">
                         <span id="current-lang-text">CAT</span>
@@ -45,6 +51,7 @@
     </header>
 
     <main>
+        <!-- ===== SECCIÓ HERO (INICI) ===== -->
         <section id="hero" class="h-screen w-full flex items-center justify-center relative text-center text-white overflow-hidden">
             <div class="absolute inset-0 z-0">
                 <img src="assets/images/hero-bg.jpg" alt="Fons abstracte fosc" class="w-full h-full object-cover opacity-30">
@@ -56,6 +63,7 @@
             </div>
         </section>
 
+        <!-- ===== SECCIÓ MANIFEST ===== -->
         <section id="manifesto" class="py-20 md:py-32 bg-[#1a1a1a]">
             <div class="container mx-auto px-6 max-w-3xl text-center scroll-reveal">
                 <h2 class="text-4xl md:text-5xl font-title mb-8" data-lang="manifesto_title">El Nostre Manifest</h2>
@@ -63,6 +71,7 @@
             </div>
         </section>
 
+        <!-- ===== SECCIÓ COL·LECCIÓ ===== -->
         <section id="collection" class="py-20 md:py-32">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16 scroll-reveal">
@@ -70,6 +79,7 @@
                     <p class="text-gray-400 max-w-2xl mx-auto" data-lang="collection_subtitle">La nostra primera col·lecció explora la forma perfecta: l'esfera. Un univers tancat que amaga una funcionalitat íntima i radical.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                    <!-- Productes aquí -->
                     <div class="text-center scroll-reveal">
                         <div class="bg-[#1a1a1a] p-8 rounded-lg mb-6 aspect-square flex items-center justify-center"><img src="assets/images/sphere_noir.png" alt="Bolso Sphère Noir" class="max-w-full max-h-full object-contain rounded-md transform hover:scale-105 transition-transform duration-500"></div>
                         <h3 class="text-2xl font-title mb-2">Sphère Noir</h3>
@@ -99,6 +109,7 @@
             </div>
         </section>
 
+        <!-- ===== SECCIÓ EL CREADOR ===== -->
         <section id="designer" class="py-20 md:py-32 bg-[#1a1a1a]">
             <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
                 <div class="scroll-reveal">
@@ -115,6 +126,7 @@
             </div>
         </section>
 
+        <!-- ===== SECCIÓ ARTESANIA ===== -->
         <section id="craftsmanship" class="py-20 md:py-32">
             <div class="container mx-auto px-6 text-center">
                 <div class="max-w-3xl mx-auto scroll-reveal">
@@ -125,6 +137,7 @@
         </section>
     </main>
 
+    <!-- ===== FOOTER AMPLIAT ===== -->
     <footer class="py-16 bg-black text-gray-400">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
@@ -156,12 +169,14 @@
         </div>
     </footer>
 
+    <!-- ===== ESTRUCTURA DE LES FINESTRES MODALS (INICIALMENT OCULTES) ===== -->
     <div id="modal-overlay" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden"></div>
     
+    <!-- Modal de Contacte -->
     <div id="contact-modal" class="modal-content hidden">
         <button class="modal-close">&times;</button>
         <h2 class="text-3xl font-title mb-6" data-lang="contact_title">Contacte</h2>
-        <form id="contact-form" action="https://formspree.io/f/xnnvyzpb" method="POST">
+        <form id="contact-form">
             <div class="mb-4">
                 <label for="name" class="block text-sm font-medium text-gray-300" data-lang="contact_name">Nom</label>
                 <input type="text" id="name" name="name" required class="mt-1 block w-full bg-gray-800 border-gray-700 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-pink-500 focus:border-pink-500">
@@ -178,6 +193,7 @@
         </form>
     </div>
 
+    <!-- Altres Modals (Contingut de mostra) -->
     <div id="faq-modal" class="modal-content hidden">
         <button class="modal-close">&times;</button>
         <h2 class="text-3xl font-title mb-6" data-lang="faq_title">Preguntes Freqüents</h2>
@@ -227,6 +243,7 @@
         </div>
     </div>
     
+    <!-- Enllaç al teu arxiu de JavaScript -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
