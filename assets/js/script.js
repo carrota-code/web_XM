@@ -19,13 +19,13 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll();
 
-    // --- NOVA LÒGICA (ROBUSTA) PER ACOLORIR CARÀCTERS ACCENTUATS SENCERS ---
-    const colorizeAccents = () => {
+    // --- NOVA LÒGICA PER ACOLORIR NOMÉS SIGNES DE PUNTUACIÓ ---
+    const colorizePunctuation = () => {
         const elementsToColorize = document.querySelectorAll('.colorize-accents');
 
-        // Expressió regular per trobar tots els caràcters que NO són lletres bàsiques (a-z),
-        // números, o espais. Això inclou accents, apòstrofs, puntuació, etc.
-        const accentRegex = /[^a-z0-9\s]/gi;
+        // Expressió regular per trobar només els caràcters de puntuació especificats.
+        // Inclou: ' , ; : . · i l'apòstrof arrissat ’
+        const punctuationRegex = /['`,;:.·’]/g;
 
         elementsToColorize.forEach(element => {
             const childNodes = Array.from(element.childNodes);
@@ -35,13 +35,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (child.nodeType === Node.TEXT_NODE) {
                     const text = child.textContent;
                     
-                    if (accentRegex.test(text)) {
-                        // Reemplacem cada caràcter trobat per ell mateix embolicat en el nostre span de color.
-                        const newHtml = text.replace(accentRegex, `<span class="neon-pink-text">$&</span>`);
+                    if (punctuationRegex.test(text)) {
+                        // Reemplacem cada caràcter de puntuació trobat
+                        // per ell mateix embolicat en el nostre span de color.
+                        const newHtml = text.replace(punctuationRegex, `<span class="neon-pink-text">$&</span>`);
                         
                         const tempWrapper = document.createElement('span');
                         tempWrapper.innerHTML = newHtml;
                         
+                        // Reemplacem el node de text antic pels nous nodes generats
                         element.replaceChild(tempWrapper, child);
                     }
                 }
@@ -49,6 +51,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     };
 
-    // Executem la funció per acolorir els accents
-    colorizeAccents();
+    // Executem la funció per acolorir la puntuació
+    colorizePunctuation();
 });
