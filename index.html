@@ -1,128 +1,56 @@
-<!DOCTYPE html>
-<html lang="ca" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>X'M - L'art de portar un secret</title>
-
-    <!-- ===== FAVICON ===== -->
-    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+document.addEventListener('DOMContentLoaded', function() {
     
-    <!-- Tailwind CSS (CDN) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Fonts de Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-    
-    <!-- Enllaç al teu arxiu d'estil personalitzat -->
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body class="antialiased">
+    // --- LÒGICA PER A L'EFECTE D'APARICIÓ AMB SCROLL ---
+    const revealElements = document.querySelectorAll('.scroll-reveal');
+    const isElementInViewport = (el) => {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.bottom >= 0
+        );
+    };
+    const revealOnScroll = () => {
+        revealElements.forEach(el => {
+            if (isElementInViewport(el)) {
+                el.classList.add('visible');
+            }
+        });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
 
-    <!-- ===== NAVEGACIÓ ===== -->
-    <header class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-50 backdrop-blur-sm transition-all duration-300">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-3xl font-bold font-title colorize-accents">X'M</a>
-            <ul class="hidden md:flex items-center space-x-8 text-sm uppercase tracking-widest">
-                <li><a href="#manifesto" class="hover:text-white transition-colors duration-300 colorize-accents">Manifest</a></li>
-                <li><a href="#collection" class="hover:text-white transition-colors duration-300 colorize-accents">Col·lecció</a></li>
-                <li><a href="#concept" class="hover:text-white transition-colors duration-300 colorize-accents">Concepte</a></li>
-            </ul>
-        </nav>
-    </header>
+    // --- NOVA LÒGICA PER ACOLORIR NOMÉS SIGNES DE PUNTUACIÓ ---
+    const colorizePunctuation = () => {
+        const elementsToColorize = document.querySelectorAll('.colorize-accents');
 
-    <main>
-        <!-- ===== SECCIÓ HERO (INICI) ===== -->
-        <section id="hero" class="h-screen w-full flex items-center justify-center relative text-center text-white overflow-hidden">
-            <div class="absolute inset-0 z-0">
-                <img src="assets/images/hero-bg.jpg" alt="Fons abstracte fosc" class="w-full h-full object-cover opacity-30">
-                <div class="absolute inset-0 bg-black opacity-50"></div>
-            </div>
-            <div class="relative z-10 p-6">
-                <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold font-title mb-4 animate-fade-in-down colorize-accents">X'M</h1>
-                <p class="text-xl md:text-2xl font-light tracking-widest animate-fade-in-up colorize-accents">L'art de portar un secret.</p>
-            </div>
-        </section>
+        // Expressió regular per trobar només els caràcters de puntuació especificats.
+        // Inclou: ' , ; : . · i l'apòstrof arrissat ’
+        const punctuationRegex = /['`,;:.·’]/g;
 
-        <!-- ===== SECCIÓ MANIFEST ===== -->
-        <section id="manifesto" class="py-20 md:py-32 bg-[#1a1a1a]">
-            <div class="container mx-auto px-6 max-w-3xl text-center scroll-reveal">
-                <h2 class="text-4xl md:text-5xl font-title mb-8 colorize-accents">El Nostre Manifest</h2>
-                <p class="text-lg md:text-xl leading-relaxed text-gray-300 colorize-accents">X'M neix a la intersecció de l'artesania i el concepte. Creiem en un luxe que no crida, sinó que xiuxiueja. En peces que no només vesteixen, sinó que dialoguen amb qui les porta. Cada disseny és una declaració d'intencions: una fusió d'elegància atemporal i una audàcia que desafia el present. No creem accessoris, creem secrets per compartir.</p>
-            </div>
-        </section>
+        elementsToColorize.forEach(element => {
+            const childNodes = Array.from(element.childNodes);
 
-        <!-- ===== SECCIÓ COL·LECCIÓ ===== -->
-        <section id="collection" class="py-20 md:py-32">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-16 scroll-reveal">
-                    <h2 class="text-4xl md:text-5xl font-title mb-4 colorize-accents">Col·lecció Sphère</h2>
-                    <p class="text-gray-400 max-w-2xl mx-auto colorize-accents">La nostra primera col·lecció explora la forma perfecta: l'esfera. Un univers tancat que amaga una funcionalitat íntima i radical.</p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                    <!-- Producte 1: Sphère Noir -->
-                    <div class="text-center scroll-reveal">
-                        <div class="bg-[#1a1a1a] p-8 rounded-lg mb-6 aspect-square flex items-center justify-center"><img src="assets/images/sphere_noir.png" alt="Bolso Sphère Noir" class="max-w-full max-h-full object-contain rounded-md transform hover:scale-105 transition-transform duration-500"></div>
-                        <h3 class="text-2xl font-title mb-2 colorize-accents">Sphère Noir</h3>
-                        <p class="text-gray-400 px-4 colorize-accents">Més que un bolso, una declaració. Revestit de la més suau pell de conill negra, és una experiència tàctil inoblidable.</p>
-                    </div>
-                    <!-- Producte 2: Sphère Icon -->
-                    <div class="text-center scroll-reveal" style="transition-delay: 0.2s;">
-                        <div class="bg-[#1a1a1a] p-8 rounded-lg mb-6 aspect-square flex items-center justify-center"><img src="assets/images/sphere_icon.png" alt="Bolso Sphère Icon" class="max-w-full max-h-full object-contain rounded-md transform hover:scale-105 transition-transform duration-500"></div>
-                        <h3 class="text-2xl font-title mb-2 colorize-accents">Sphère Icon</h3>
-                        <p class="text-gray-400 px-4 colorize-accents">Un disseny gràfic que reinterpreta un clàssic universal sota el prisma del luxe, alternant pell napa blanca i ant negre.</p>
-                    </div>
-                    <!-- Producte 3: Sphère Lucid -->
-                    <div class="text-center scroll-reveal" style="transition-delay: 0.4s;">
-                         <div class="bg-[#1a1a1a] p-8 rounded-lg mb-6 aspect-square flex items-center justify-center"><img src="assets/images/sphere_lucid.png" alt="Bolso Sphère Lucid" class="max-w-full max-h-full object-contain rounded-md transform hover:scale-105 transition-transform duration-500"></div>
-                        <h3 class="text-2xl font-title mb-2 colorize-accents">Sphère Lucid</h3>
-                        <p class="text-gray-400 px-4 colorize-accents">Un exercici d'honestedat radical. Una esfera d'acrílic transparent per a la dona que no té res a amagar.</p>
-                    </div>
-                    <!-- Producte 4: Sphère Strike -->
-                    <div class="text-center scroll-reveal">
-                        <div class="bg-[#1a1a1a] p-8 rounded-lg mb-6 aspect-square flex items-center justify-center"><img src="assets/images/sphere_strike.png" alt="Bolso Sphère Strike" class="max-w-full max-h-full object-contain rounded-md transform hover:scale-105 transition-transform duration-500"></div>
-                        <h3 class="text-2xl font-title mb-2 colorize-accents">Sphère Strike</h3>
-                        <p class="text-gray-400 px-4 colorize-accents">Una picada d'ullet a la cultura pop. Pell de xarol negre d'alta brillantor que evoca una bola de bitlles de luxe.</p>
-                    </div>
-                    <!-- Producte 5: Sphère Niu -->
-                    <div class="text-center scroll-reveal" style="transition-delay: 0.2s;">
-                        <div class="bg-[#1a1a1a] p-8 rounded-lg mb-6 aspect-square flex items-center justify-center"><img src="assets/images/sphere_niu.png" alt="Bolso Sphère Niu" class="max-w-full max-h-full object-contain rounded-md transform hover:scale-105 transition-transform duration-500"></div>
-                        <h3 class="text-2xl font-title mb-2 colorize-accents">Sphère Niu</h3>
-                        <p class="text-gray-400 px-4 colorize-accents">Un retorn a l'essència, embolicat en fil de llana merino XXL. El luxe és calidesa i confort.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+            childNodes.forEach(child => {
+                // Només processem nodes de text
+                if (child.nodeType === Node.TEXT_NODE) {
+                    const text = child.textContent;
+                    
+                    if (punctuationRegex.test(text)) {
+                        // Reemplacem cada caràcter de puntuació trobat
+                        // per ell mateix embolicat en el nostre span de color.
+                        const newHtml = text.replace(punctuationRegex, `<span class="neon-pink-text">$&</span>`);
+                        
+                        const tempWrapper = document.createElement('span');
+                        tempWrapper.innerHTML = newHtml;
+                        
+                        // Reemplacem el node de text antic pels nous nodes generats
+                        element.replaceChild(tempWrapper, child);
+                    }
+                }
+            });
+        });
+    };
 
-        <!-- ===== SECCIÓ CONCEPTE ===== -->
-        <section id="concept" class="py-20 md:py-32 bg-[#1a1a1a]">
-            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-                <div class="scroll-reveal">
-                    <h2 class="text-4xl md:text-5xl font-title mb-6 colorize-accents">Un Disseny Radical</h2>
-                    <p class="text-lg text-gray-300 mb-4 leading-relaxed colorize-accents">El bolso Sphère no se subjecta, es vesteix. Hem eliminat la nansa tradicional per crear una connexió més íntima i directa.</p>
-                    <p class="text-lg text-gray-300 leading-relaxed colorize-accents">La mà s'insereix a través d'una obertura discreta, trobant una empunyadura interior ergonòmica. El resultat és una silueta pura, una extensió del cos que redefineix el gest de portar un bolso.</p>
-                </div>
-                <div class="scroll-reveal" style="transition-delay: 0.2s;">
-                    <div class="bg-black p-4 rounded-lg shadow-2xl"><img src="assets/images/concept-bg.jpg" alt="Imatge conceptual" class="w-full h-auto object-cover rounded-md"></div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- ===== FOOTER ===== -->
-    <footer class="py-12 bg-black">
-        <div class="container mx-auto px-6 text-center text-gray-500">
-            <div class="text-3xl font-bold font-title mb-4 colorize-accents">X'M</div>
-            <p class="mb-6 text-sm">© 2025 X'M. Tots els drets reservats.</p>
-            <div class="flex justify-center space-x-6">
-                <!-- Icones SVG per a xarxes socials -->
-            </div>
-        </div>
-    </footer>
-    
-    <!-- Enllaç al teu arxiu de JavaScript -->
-    <script src="assets/js/script.js"></script>
-</body>
-</html>
+    // Executem la funció per acolorir la puntuació
+    colorizePunctuation();
+});
