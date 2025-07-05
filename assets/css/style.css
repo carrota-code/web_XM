@@ -49,18 +49,7 @@ h1, h2, h3, .font-title {
     transform: translateY(0);
 }
 
-/* NOUS ELS PER A POSICIONAR ELS PUNTS DE LES 'i' i 'j' */
-.letter-wrapper {
-    position: relative;
-    display: inline-block;
-}
-
-.dot {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    /* Aquests valors poden necessitar ajustos fins segons la font i la mida */
-    top: -0.15em; 
-    line-height: 1;
-    font-family: 'Inter', sans-serif; /* Assegurem la font del punt */
+/* Estils per al nou peu de pàgina */
+footer a {
+    text-decoration: none;
 }
