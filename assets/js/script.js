@@ -19,38 +19,52 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll();
 
-    // --- NOVA LÒGICA PER ACOLORIR NOMÉS SIGNES DE PUNTUACIÓ ---
+    // --- NOVA LÒGICA (ROBUSTA) PER ACOLORIR NOMÉS SIGNES DE PUNTUACIÓ ---
     const colorizePunctuation = () => {
         const elementsToColorize = document.querySelectorAll('.colorize-accents');
 
         // Expressió regular per trobar només els caràcters de puntuació especificats.
-        // Inclou: ' , ; : . · i l'apòstrof arrissat ’
         const punctuationRegex = /['`,;:.·’]/g;
 
         elementsToColorize.forEach(element => {
+            // Utilitzem Array.from per crear una còpia estàtica, ja que modificarem els nodes fills.
             const childNodes = Array.from(element.childNodes);
 
             childNodes.forEach(child => {
-                // Només processem nodes de text
-                if (child.nodeType === Node.TEXT_NODE) {
+                // Només processem nodes de text que no estiguin buits.
+                if (child.nodeType === Node.TEXT_NODE && child.textContent.trim() !== '') {
                     const text = child.textContent;
                     
                     if (punctuationRegex.test(text)) {
-                        // Reemplacem cada caràcter de puntuació trobat
-                        // per ell mateix embolicat en el nostre span de color.
-                        const newHtml = text.replace(punctuationRegex, `<span class="neon-pink-text">$&</span>`);
+                        // Creem un fragment de document per contenir els nous nodes. És més eficient.
+                        const fragment = document.createDocumentFragment();
                         
-                        const tempWrapper = document.createElement('span');
-                        tempWrapper.innerHTML = newHtml;
+                        // Dividim el text per la nostra expressió regular, mantenint els delimitadors.
+                        const parts = text.split(punctuationRegex);
+                        const matches = text.match(punctuationRegex) || [];
+
+                        parts.forEach((part, index) => {
+                            // Afegim la part de text normal.
+                            if (part) {
+                                fragment.appendChild(document.createTextNode(part));
+                            }
+                            // Afegim el signe de puntuació embolicat en un span.
+                            if (index < matches.length) {
+                                const span = document.createElement('span');
+                                span.className = 'neon-pink-text';
+                                span.textContent = matches[index];
+                                fragment.appendChild(span);
+                            }
+                        });
                         
-                        // Reemplacem el node de text antic pels nous nodes generats
-                        element.replaceChild(tempWrapper, child);
+                        // Reemplacem el node de text original pel fragment amb els nous nodes.
+                        element.replaceChild(fragment, child);
                     }
                 }
             });
         });
     };
 
-    // Executem la funció per acolorir la puntuació
+    // Executem la funció per acolorir la puntuació.
     colorizePunctuation();
 });
