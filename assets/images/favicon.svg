@@ -19,7 +19,7 @@
 
     <text x="50" y="55" class="logo-text">
         <tspan fill="#111111">X</tspan>
-        <tspan fill="#FF007F" dx="-0.2em">'</tspan>
-        <tspan fill="#111111" dx="-0.2em">M</tspan>
+        <tspan fill="#FF007F" dx="-0.3em">'</tspan>
+        <tspan fill="#111111" dx="-0.3em">M</tspan>
     </text>
 </svg>
