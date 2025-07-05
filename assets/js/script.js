@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     // --- LÒGICA PER A L'EFECTE D'APARICIÓ AMB SCROLL ---
+    // Aquesta part funciona correctament i la mantenim.
     try {
         const revealElements = document.querySelectorAll('.scroll-reveal');
         if (revealElements.length > 0) {
@@ -19,58 +20,32 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             };
             window.addEventListener('scroll', revealOnScroll);
-            revealOnScroll(); // Comprobación inicial
+            revealOnScroll(); // Comprovació inicial
         }
     } catch (error) {
         console.error("Error en la función de scroll-reveal:", error);
     }
 
-    // --- LÒGICA DEFINITIVA I ROBUSTA PER ACOLORIR NOMÉS SIGNES DE PUNTUACIÓ ---
+    // --- SCRIPT SIMPLIFICAT I ROBUST PER ACOLORIR NOMÉS APÒSTROFS ---
+    // Tornem a una solució més simple i segura per evitar errors.
     try {
-        const colorizePunctuation = () => {
+        const colorizeApostrophes = () => {
             const elementsToColorize = document.querySelectorAll('.colorize-accents');
             if (elementsToColorize.length === 0) return;
 
-            // Expressió regular per trobar només els caràcters de puntuació especificats.
-            const punctuationRegex = /['`,;:.·’]/g;
+            // Expressió regular per trobar només l'apòstrof recte (') i l'arrissat (’).
+            const apostropheRegex = /['’]/g;
 
             elementsToColorize.forEach(element => {
-                const childNodes = Array.from(element.childNodes);
-
-                childNodes.forEach(child => {
-                    if (child.nodeType === Node.TEXT_NODE && child.textContent.trim() !== '') {
-                        const text = child.textContent;
-                        
-                        if (punctuationRegex.test(text)) {
-                            const fragment = document.createDocumentFragment();
-                            const parts = text.split(punctuationRegex);
-                            const matches = text.match(punctuationRegex) || [];
-
-                            parts.forEach((part, index) => {
-                                if (part) {
-                                    fragment.appendChild(document.createTextNode(part));
-                                }
-                                if (index < matches.length) {
-                                    const span = document.createElement('span');
-                                    span.className = 'neon-pink-text';
-                                    span.textContent = matches[index];
-                                    fragment.appendChild(span);
-                                }
-                            });
-                            
-                            // Comprobamos que el nodo padre todavía existe antes de reemplazar
-                            if (child.parentNode) {
-                                child.parentNode.replaceChild(fragment, child);
-                            }
-                        }
-                    }
-                });
+                // Treballem directament amb l'HTML intern. Per a aquest cas simple, és segur.
+                // Reemplacem cada apòstrof trobat per ell mateix embolicat en un span de color.
+                element.innerHTML = element.innerHTML.replace(apostropheRegex, `<span class="neon-pink-text">$&</span>`);
             });
         };
 
-        colorizePunctuation();
+        colorizeApostrophes();
 
     } catch (error) {
-        console.error("Error en la función colorizePunctuation:", error);
+        console.error("Error en la función colorizeApostrophes:", error);
     }
 });
