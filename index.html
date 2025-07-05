@@ -1,45 +1,109 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>X'M - Col·lecció Exclusiva</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web XM</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Web XM</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#portfolio">Portafolio</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <header>
-    <h1>X'M</h1>
-    <nav>
-      <ul>
-        <li><a href="#inici">Inici</a></li>
-        <li><a href="#productes">Productes</a></li>
-        <li><a href="#contacte">Contacte</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-
-    <section id="inici">
-      <h2>Benvingut a la col·lecció X'M</h2>
-      <p>Descobreix una línia única de bolsos esfèrics de luxe.</p>
+    <section id="hero" class="hero">
+        <div class="container">
+            <h2>Bienvenido a Web XM</h2>
+            <p>Tu solución ideal para presencia online.</p>
+            <a href="#contact" class="btn btn-primary">Contáctanos</a>
+        </div>
     </section>
 
-    <section id="productes">
-      <h2>Els nostres productes</h2>
-      <p>[Aquí pots afegir les imatges i descripcions dels bolsos]</p>
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos un equipo dedicado a crear experiencias web increíbles.</p>
+        </div>
     </section>
 
-    <section id="contacte">
-      <h2>Contacte</h2>
-      <form action="https://formsubmit.co/jordibabi@gmail.com" method="POST" class="formulari-contacte">
-        <!-- Opcions ocultes -->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://carrota-code.github.io/web_XM/gracies.html">
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>Diseño Web</h3>
+                    <p>Creamos diseños modernos y responsivos.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Desarrollo Web</h3>
+                    <p>Construimos sitios funcionales y escalables.</p>
+                </div>
+                <div class="service-item">
+                    <h3>SEO</h3>
+                    <p>Ayudamos a que tu sitio sea encontrado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <label for="nom">Nom</label>
-        <input type="text" id="nom" name="nom" required placeholder="Nom complet">
+    <section id="portfolio" class="portfolio section-padding">
+        <div class="container">
+            <h2>Nuestro Portafolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/300" alt="Proyecto 1">
+                    <h3>Proyecto Uno</h3>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/300" alt="Proyecto 2">
+                    <h3>Proyecto Dos</h3>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <label for="email">Correu electrònic</label>
-        <input type="email" id="
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>¿Tienes alguna pregunta o proyecto en mente? ¡Contáctanos!</p>
+            <form action="https://formspree.io/f/xnnvyzpb" method="POST">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="_replyto" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Web XM. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
