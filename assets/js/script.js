@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
             shipping_title: "Enviaments i Devolucions",
             shipping_content: "<p>Totes les comandes es processen en un termini de 2 dies laborables. Els enviaments estàndard triguen entre 5-7 dies laborables, i els exprés entre 1-3 dies. Rebràs un número de seguiment un cop la teva comanda hagi estat enviada. Per a devolucions, si us plau, contacta'ns a través del nostre formulari de contacte per iniciar el procés.</p>",
             care_title: "Cura del Producte",
-            care_content: "<p>Les nostres peces estan fetes amb materials de la més alta qualitat. Per mantenir la seva bellesa, evita l'exposició prolongada a la llum solar directa i a la humitat. Guarda el teu bolso a la seva bossa guardapols quan no l'utilitzis. Per a la neteja, consulta un especialista en tractament de pells.</p>",
+            care_content: "<p>Les nostres peces estan fetes amb materials de la més alta qualitat. Per mantenir la seva bellesa, evita l'exposició prolongada a la llum solar directa i a la humitat. Guarda el teu bolso a la seva bossa guardapols quan no l'utilitzes. Per a la neteja, consulta un especialista en tractament de pells.</p>",
             story_title: "La Nostra Història",
             story_content: "<p>X'M va néixer d'un desig: el de crear objectes que no només fossin bells, sinó que tinguessin una ànima. Fundada per Gemma Juan Garcia, la marca busca desafiar la percepció tradicional del luxe, fusionant l'art conceptual amb l'artesania més meticulosa. Cada col·lecció és un capítol d'aquesta història, una exploració de formes, textures i emocions.</p>",
             sustainability_title: "Sostenibilitat",
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
             story_title: "Nuestra Historia",
             story_content: "<p>X'M nació de un deseo: el de crear objetos que no solo fueran bellos, sino que tuvieran un alma. Fundada por Gemma Juan Garcia, la marca busca desafiar la percepción tradicional del lujo, fusionando el arte conceptual con la artesanía más meticulosa. Cada colección es un capítulo de esta historia, una exploración de formas, texturas y emociones.</p>",
             sustainability_title: "Sostenibilidad",
-            sustainability_content: "<p>Estamos comprometidos con un lujo consciente. Trabajamos con talleres locales para minimizar nuestra huella de carbono y garantizar condiciones laborales justas. Priorizamos el uso de materiales responsables y buscamos constantemente maneras de innovar en sostenibilidad, desde nuestro packaging reciclable hasta la selección de pieles de proveedores certificados.</p>",
+            sustainability_content: "<p>Estamos comprometidos con un lujo consciente. Trabajamos con talleres locales para minimizar nuestra huella de carbono y garantizar condicio nes laborales justas. Priorizamos el uso de materiales responsables y buscamos constantemente maneras de innovar en sostenibilidad, desde nuestro packaging reciclable hasta la selección de pieles de proveedores certificados.</p>",
             press_title: "Prensa",
             press_content: "<p>Para consultas de prensa, entrevistas o solicitudes de material gráfico, por favor, contacten con nuestro departamento de comunicación en <a href='mailto:press@xm-brand.com' class='text-pink-500 hover:underline'>press@xm-brand.com</a>.</p>"
         },
@@ -121,7 +121,6 @@ document.addEventListener('DOMContentLoaded', function() {
             langMenu.classList.add('hidden');
         }
     });
-
     langMenu.addEventListener('click', (e) => {
         e.preventDefault();
         const selectedLangId = e.target.getAttribute('data-lang-id');
@@ -130,7 +129,6 @@ document.addEventListener('DOMContentLoaded', function() {
             langMenu.classList.add('hidden');
         }
     });
-
     function setLanguage(lang) {
         document.documentElement.lang = lang;
         currentLangText.textContent = lang.toUpperCase();
@@ -155,7 +153,6 @@ document.addEventListener('DOMContentLoaded', function() {
             openModal(modal);
         });
     });
-
     function openModal(modal) {
         if (!modal) return;
         modalOverlay.classList.remove('hidden');
@@ -178,24 +175,38 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.modal-close').forEach(btn => {
         btn.addEventListener('click', closeModal);
     });
-
     // --- LÒGICA DEL FORMULARI DE CONTACTE ---
     const contactForm = document.getElementById('contact-form');
-    contactForm.addEventListener('submit', function(e) {
+    contactForm.addEventListener('submit', async function(e) {
         e.preventDefault();
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
         
-        const subject = `Missatge de contacte de ${name}`;
-        const body = `Nom: ${name}\nEmail: ${email}\n\nMissatge:\n${message}`;
+        const form = e.target;
+        const data = new FormData(form);
+        const url = "https://formspree.io/f/xnnvyzpb"; // URL de Formspree
         
-        window.location.href = `mailto:jordibabi@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        
-        closeModal();
+        try {
+            const response = await fetch(url, {
+                method: 'POST',
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            if (response.ok) {
+                console.log("Formulario enviado con éxito a Formspree");
+                form.reset(); // Limpia el formulario
+                closeModal(); // Cierra el modal
+                // Opcional: mostrar un mensaje de éxito al usuario
+            } else {
+                console.error("Error al enviar el formulario a Formspree:", response.statusText);
+                // Opcional: mostrar un mensaje de error al usuario
+            }
+        } catch (error) {
+            console.error("Error de red al enviar el formulario:", error);
+            // Opcional: mostrar un mensaje de error de red al usuario
+        }
     });
-
-
     // --- LÒGICA D'ANIMACIONS ---
     const revealElements = document.querySelectorAll('.scroll-reveal');
     const isElementInViewport = (el) => {
