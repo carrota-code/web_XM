@@ -57,6 +57,9 @@ document.addEventListener('DOMContentLoaded', function() {
             cart_message: "Diga'ns quin és el teu desig i et direm com el podem fer realitat. Enviem a tot el mon."
         },
         es: {
+            cart_footer: "En breve te daremos respuesta.",
+            cart_product: "Selecciona el producto",
+            cart_intro: "¿Cuál es tu deseo que haremos realidad?",
             nav_manifesto: "Manifiesto",
             nav_collection: "COLECCIÓN",
             nav_contact: "Contacto",
@@ -336,16 +339,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // --- LÒGICA DEL FORMULARI DE CONTACTE ---
     const contactForm = document.getElementById('contact-form');
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-        const subject = `Missatge de contacte de ${name}`;
-        const body = `Nom: ${name}\nEmail: ${email}\n\nMissatge:\n${message}`;
-        window.location.href = `mailto:jordibabi@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        closeModal();
-    });
+    // Formulari gestionat per Formspree: no cal lògica JS personalitzada.
 
     // --- LÒGICA DE ANIMACIONS ---
     const revealElements = document.querySelectorAll('.scroll-reveal');
