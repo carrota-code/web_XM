@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ca: {
             nav_manifesto: "Manifest",
             nav_collection: "Col·lecció",
-            nav_designer: "Creador",
+            nav_contact: "Contacte", // Nuevo
             nav_craftsmanship: "Artesania",
             hero_slogan: "L'art de portar un secret.",
             manifesto_title: "El Nostre Manifest",
@@ -17,16 +17,13 @@ document.addEventListener('DOMContentLoaded', function() {
             lucid_desc: "Un exercici d'honestedat radical. Una esfera d'acrílic transparent per a la dona que no té res a amagar.",
             strike_desc: "Una picada d'ullet a la cultura pop. Pell de xarol negre d'alta brillantor que evoca una bola de bitlles de luxe.",
             niu_desc: "Un retorn a l'essència, embolicat en fil de llana merino XXL. El luxe és calidesa i confort.",
-            designer_title: "La Visió d'una Creadora",
-            designer_quote1: "\"Sempre m'ha obsessionat la relació entre el cos i l'objecte. Un bolso no és només un contenidor, és un company. Amb Sphère, volia explorar una connexió més profunda, gairebé simbiòtica.\"",
-            designer_quote2: "Per a mi, el disseny ha de provocar una emoció, ha de ser una peça de conversa. X'M és el resultat d'aquesta cerca: objectes bells amb una ànima inesperada.",
             craftsmanship_title: "L'Ànima de l'Artesania",
             craftsmanship_text: "Cada peça X'M es construeix amb paciència i precisió en tallers artesans locals. Seleccionem només els millors materials: pells de napa suau, acrílics polits a mà i llanes pures. La nostra cremallera, amb el seu distintiu rosa neó, no és només un tancament, és una joia dissenyada a mida i banyada en or per garantir una durabilitat i un lliscar perfectes.",
             footer_mission: "Creant objectes de luxe amb una ànima inesperada. Disseny conceptual i artesania per a la dona moderna.",
             footer_help: "Ajuda",
             footer_contact: "Contacte",
             footer_faq: "Preguntes Freqüents (FAQ)",
-            footer_shipping: "Enviaments i Devolucions",
+            // footer_shipping: "Enviaments i Devolucions", // Eliminado
             footer_care: "Cura del Producte",
             footer_company: "Empresa",
             footer_story: "La Nostra Història",
@@ -40,12 +37,12 @@ document.addEventListener('DOMContentLoaded', function() {
             contact_send: "Enviar Missatge",
             faq_title: "Preguntes Freqüents",
             faq_content: "<strong>Quines són les opcions d'enviament?</strong><br>Oferim enviament estàndard i exprés a tot el món. Els costos i temps de lliurament es calculen a la pantalla de pagament.<br><br><strong>Puc retornar un producte?</strong><br>Sí, acceptem devolucions dins dels 14 dies posteriors a la recepció de la comanda. El producte ha d'estar en perfectes condicions i amb el seu embalatge original.",
-            shipping_title: "Enviaments i Devolucions",
-            shipping_content: "<p>Totes les comandes es processen en un termini de 2 dies laborables. Els enviaments estàndard triguen entre 5-7 dies laborables, i els exprés entre 1-3 dies. Rebràs un número de seguiment un cop la teva comanda hagi estat enviada. Per a devolucions, si us plau, contacta'ns a través del nostre formulari de contacte per iniciar el procés.</p>",
+            // shipping_title: "Enviaments i Devolucions", // Eliminado
+            // shipping_content: "<p>Totes les comandes es processen en un termini de 2 dies laborables. Els enviaments estàndard triguen entre 5-7 dies laborables, i els exprés entre 1-3 dies. Rebràs un número de seguiment un cop la teva comanda hagi estat enviada. Per a devolucions, si us plau, contacta'ns a través del nostre formulari de contacte per iniciar el procés.</p>", // Eliminado
             care_title: "Cura del Producte",
             care_content: "<p>Les nostres peces estan fetes amb materials de la més alta qualitat. Per mantenir la seva bellesa, evita l'exposició prolongada a la llum solar directa i a la humitat. Guarda el teu bolso a la seva bossa guardapols quan no l'utilitzes. Per a la neteja, consulta un especialista en tractament de pells.</p>",
             story_title: "La Nostra Història",
-            story_content: "<p>X'M va néixer d'un desig: el de crear objectes que no només fossin bells, sinó que tinguessin una ànima. Fundada per Gemma Juan Garcia, la marca busca desafiar la percepció tradicional del luxe, fusionant l'art conceptual amb l'artesania més meticulosa. Cada col·lecció és un capítol d'aquesta història, una exploració de formes, textures i emocions.</p>",
+            story_content: "<p>X'M va néixer d'un desig: el de crear objectes que no només fossin bells, sinó que tinguessin una ànima. La marca busca desafiar la percepció tradicional del luxe, fusionant l'art conceptual amb l'artesania més meticulosa. Cada col·lecció és un capítol d'aquesta història, una exploració de formes, textures i emocions.</p>",
             sustainability_title: "Sostenibilitat",
             sustainability_content: "<p>Estem compromesos amb un luxe conscient. Treballem amb tallers locals per minimitzar la nostra petjada de carboni i garantir condicions laborals justes. Prioritzem l'ús de materials responsables i busquem constantment maneres d'innovar en sostenibilitat, des del nostre packaging reciclable fins a la selecció de pells de proveïdors certificats.</p>",
             press_title: "Premsa",
@@ -54,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
         es: {
             nav_manifesto: "Manifiesto",
             nav_collection: "Colección",
-            nav_designer: "Creador",
+            nav_contact: "Contacto", // Nuevo
             nav_craftsmanship: "Artesanía",
             hero_slogan: "El arte de llevar un secreto.",
             manifesto_title: "Nuestro Manifiesto",
@@ -66,16 +63,13 @@ document.addEventListener('DOMContentLoaded', function() {
             lucid_desc: "Un ejercicio de honestidad radical. Una esfera de acrílico transparente para la mujer que no tiene nada que ocultar.",
             strike_desc: "Un guiño a la cultura pop. Piel de charol negro de alto brillo que evoca una bola de bolos de lujo.",
             niu_desc: "Un retorno a la esencia, envuelto en hilo de lana merino XXL. El lujo es calidez y confort.",
-            designer_title: "La Visión de una Creadora",
-            designer_quote1: "\"Siempre me ha obsesionado la relación entre el cuerpo y el objeto. Un bolso no es solo un contenedor, es un compañero. Con Sphère, quería explorar una conexión más profunda, casi simbiótica.\"",
-            designer_quote2: "Para mí, el diseño debe provocar una emoción, debe ser una pieza de conversación. X'M es el resultado de esta búsqueda: objetos bellos con un alma inesperada.",
             craftsmanship_title: "El Alma de la Artesanía",
             craftsmanship_text: "Cada pieza X'M se construye con paciencia y precisión en talleres artesanos locales. Seleccionamos solo los mejores materiales: pieles de napa suave, acrílicos pulidos a mano y lanas puras. Nuestra cremallera, con su distintivo rosa neón, no es solo un cierre, es una joya diseñada a medida y bañada en oro para garantizar una durabilidad y un deslizamiento perfectos.",
             footer_mission: "Creando objetos de lujo con un alma inesperada. Diseño conceptual y artesanía para la mujer moderna.",
             footer_help: "Ayuda",
             footer_contact: "Contacto",
             footer_faq: "Preguntas Frecuentes (FAQ)",
-            footer_shipping: "Envíos y Devoluciones",
+            // footer_shipping: "Envíos y Devoluciones", // Eliminado
             footer_care: "Cuidado del Producto",
             footer_company: "Empresa",
             footer_story: "Nuestra Historia",
@@ -89,12 +83,12 @@ document.addEventListener('DOMContentLoaded', function() {
             contact_send: "Enviar Mensaje",
             faq_title: "Preguntas Frecuentes",
             faq_content: "<strong>¿Cuáles son las opciones de envío?</strong><br>Ofrecemos envío estándar y exprés a todo el mundo. Los costes y tiempos de entrega se calculan en la pantalla de pago.<br><br><strong>¿Puedo devolver un producto?</strong><br>Sí, aceptamos devoluciones dentro de los 14 días posteriores a la recepción del pedido. El producto debe estar en perfectas condiciones y con su embalaje original.",
-            shipping_title: "Envíos y Devoluciones",
-            shipping_content: "<p>Todos los pedidos se procesan en un plazo de 2 días laborables. Los envíos estándar tardan entre 5-7 días laborables, y los exprés entre 1-3 días. Recibirás un número de seguimiento una vez que tu pedido haya sido enviado. Para devoluciones, por favor, contáctanos a través de nuestro formulario de contacto para iniciar el proceso.</p>",
+            // shipping_title: "Envíos y Devoluciones", // Eliminado
+            // shipping_content: "<p>Todos los pedidos se procesan en un plazo de 2 días laborables. Los envíos estándar tardan entre 5-7 días laborables, y los exprés entre 1-3 días. Recibirás un número de seguimiento una vez que tu pedido haya sido enviado. Para devoluciones, por favor, contáctanos a través de nuestro formulario de contacto para iniciar el proceso.</p>", // Eliminado
             care_title: "Cuidado del Producto",
             care_content: "<p>Nuestras piezas están hechas con materiales de la más alta calidad. Para mantener su belleza, evita la exposición prolongada a la luz solar directa y a la humedad. Guarda tu bolso en su bolsa guardapolvo cuando no lo uses. Para la limpieza, consulta a un especialista en tratamiento de pieles.</p>",
             story_title: "Nuestra Historia",
-            story_content: "<p>X'M nació de un deseo: el de crear objetos que no solo fueran bellos, sino que tuvieran un alma. Fundada por Gemma Juan Garcia, la marca busca desafiar la percepción tradicional del lujo, fusionando el arte conceptual con el artesanía más meticulosa. Cada colección es un capítulo de esta historia, una exploración de formas, texturas y emociones.</p>",
+            story_content: "<p>X'M nació de un deseo: el de crear objetos que no solo fueran bellos, sino que tuvieran un alma. La marca busca desafiar la percepción tradicional del lujo, fusionando el arte conceptual con el artesanía más meticulosa. Cada colección es un capítulo de esta historia, una exploración de formas, texturas y emociones.</p>",
             sustainability_title: "Sostenibilidad",
             sustainability_content: "<p>Estamos comprometidos con un lujo consciente. Trabajamos con talleres locales para minimizar nuestra huella de carbono y garantizar condiciones laborales justas. Priorizamos el uso de materiales responsables y buscamos constantemente maneras de innovar en sostenibilidad, desde nuestro packaging reciclable hasta la selección de pieles de proveedores certificados.</p>",
             press_title: "Prensa",
@@ -103,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
         fr: {
             nav_manifesto: "Manifeste",
             nav_collection: "Collection",
-            nav_designer: "Créateur",
+            nav_contact: "Contact", // Nuevo
             nav_craftsmanship: "Artisanat",
             hero_slogan: "L'art de porter un secret.",
             manifesto_title: "Notre Manifeste",
@@ -115,16 +109,13 @@ document.addEventListener('DOMContentLoaded', function() {
             lucid_desc: "Un exercice d'honnêteté radicale. Une sphère en acrylique transparent pour la femme qui n'a rien à cacher.",
             strike_desc: "Un clin d'œil à la culture pop. Cuir verni noir brillant qui évoque une boule de bowling de luxe.",
             niu_desc: "Un retour à l'essence, enveloppé de fil de laine mérinos XXL. Le luxe est chaleur et confort.",
-            designer_title: "La Vision d'une Créatrice",
-            designer_quote1: "\"J'ai toujours été obsédée par la relation entre le corps et l'objet. Un sac n'est pas seulement un contenant, c'est un compagnon. Avec Sphère, je voulais explorer une connexion plus profonde, presque symbiotique.\"",
-            designer_quote2: "Pour moi, le design doit provoquer une émotion, il doit être une pièce de conversation. X'M est le résultat de cette quête : de beaux objets avec une âme inattendue.",
             craftsmanship_title: "L'Âme de l'Artisanat",
             craftsmanship_text: "Chaque pièce X'M est construite avec patience et précision dans des ateliers artisanaux locaux. Nous sélectionnons uniquement les meilleurs matériaux : cuirs nappa souples, acryliques polis à la main et laines pures. Notre fermeture éclair, avec son rose néon distinctif, n'est pas seulement une fermeture, c'est un bijou conçu sur mesure et plaqué or pour garantir une durabilité et une glisse parfaites.",
             footer_mission: "Créer des objets de luxe avec une âme inattendue. Design conceptuel et artisanat pour la femme moderne.",
             footer_help: "Aide",
             footer_contact: "Contact",
             footer_faq: "Questions Fréquentes (FAQ)",
-            footer_shipping: "Expéditions et Retours",
+            // footer_shipping: "Expéditions et Retours", // Eliminado
             footer_care: "Entretien du Produit",
             footer_company: "Entreprise",
             footer_story: "Notre Histoire",
@@ -138,12 +129,12 @@ document.addEventListener('DOMContentLoaded', function() {
             contact_send: "Envoyer Message",
             faq_title: "Questions Fréquentes",
             faq_content: "<strong>Quelles sont les options d'expédition ?</strong><br>Nous offrons l'expédition standard et express dans le monde entier. Les frais et délais de livraison sont calculés à la caisse.<br><br><strong>Puis-je retourner un produit ?</strong><br>Oui, nous acceptons les retours dans les 14 jours suivant la réception de la commande. Le produit doit être en parfait état et dans son emballage d'origine.",
-            shipping_title: "Expéditions et Retours",
-            shipping_content: "<p>Toutes les commandes sont traitées dans un délai de 2 jours ouvrables. Les expéditions standard prennent entre 5 et 7 jours ouvrables, et les express entre 1 et 3 jours. Vous recevrez un numéro de suivi une fois votre commande expédiée. Pour les retours, veuillez nous contacter via notre formulaire de contact pour initier le processus.</p>",
+            // shipping_title: "Expéditions et Retours", // Eliminado
+            // shipping_content: "<p>Toutes les commandes sont traitées dans un délai de 2 jours ouvrables. Les expéditions standard prennent entre 5 et 7 jours ouvrables, et les express entre 1 et 3 jours. Vous recevrez un numéro de suivi une fois votre commande expédiée. Pour les retours, veuillez nous contacter via notre formulaire de contact pour initier le processus.</p>", // Eliminado
             care_title: "Entretien du Produit",
             care_content: "<p>Nos pièces sont fabriquées avec des matériaux de la plus haute qualité. Pour préserver leur beauté, évitez une exposition prolongée à la lumière directe du soleil et à l'humidité. Rangez votre sac dans sa housse anti-poussière lorsque vous ne l'utilisez pas. Pour le nettoyage, consultez un spécialiste du traitement du cuir.</p>",
             story_title: "Notre Histoire",
-            story_content: "<p>X'M est née d'un désir : celui de créer des objets qui ne soient pas seulement beaux, mais qui aient une âme. Fondée par Gemma Juan Garcia, la marque cherche à défier la perception traditionnelle du luxe, fusionnant l'art conceptuel avec l'artisanat le plus méticuleux. Chaque collection est un chapitre de cette histoire, une exploration des formes, des textures et des émotions.</p>",
+            story_content: "<p>X'M est née d'un désir : celui de créer des objets qui ne soient pas seulement beaux, mais qui aient une âme. La marque cherche à défier la perception traditionnelle du luxe, fusionnant l'art conceptuel avec l'artisanat le plus méticuleux. Chaque collection est un chapitre de cette histoire, une exploration des formes, des textures et des émotions.</p>",
             sustainability_title: "Durabilité",
             sustainability_content: "<p>Nous nous engageons pour un luxe conscient. Nous travaillons avec des ateliers locaux pour minimiser notre empreinte carbone et garantir des conditions de travail équitables. Nous priorisons l'utilisation de matériaux responsables et recherchons constamment des moyens d'innover en matière de durabilité, de notre emballage recyclable à la sélection de cuirs provenant de fournisseurs certifiés.</p>",
             press_title: "Presse",
@@ -152,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
         it: {
             nav_manifesto: "Manifesto",
             nav_collection: "Collezione",
-            nav_designer: "Creatore",
+            nav_contact: "Contatto", // Nuevo
             nav_craftsmanship: "Artigianato",
             hero_slogan: "L'arte di portare un segreto.",
             manifesto_title: "Il Nostro Manifesto",
@@ -164,16 +155,13 @@ document.addEventListener('DOMContentLoaded', function() {
             lucid_desc: "Un esercizio di onestà radicale. Una sfera in acrilico trasparente per la donna che non ha nulla da nascondere.",
             strike_desc: "Un cenno alla cultura pop. Pelle verniciata nera ad alta lucentezza che evoca una palla da bowling di lusso.",
             niu_desc: "Un ritorno all'essenza, avvolta in filo di lana merino XXL. Il lusso è calore e comfort.",
-            designer_title: "La Visione di una Creatrice",
-            designer_quote1: "\"Sono sempre stata ossessionata dalla relazione tra il corpo e l'oggetto. Una borsa non è solo un contenitore, è un compagno. Con Sphère, volevo esplorare una connessione più profonda, quasi simbiotica.\"",
-            designer_quote2: "Per me, il design deve provocare un'emozione, deve essere un pezzo di conversazione. X'M è il risultato di questa ricerca: oggetti belli con un'anima inaspettata.",
             craftsmanship_title: "L'Anima dell'Artigianato",
             craftsmanship_text: "Ogni pezzo X'M è costruito con pazienza e precisione in laboratori artigianali locali. Selezioniamo solo i migliori materiali: pelli nappa morbide, acrilici lucidati a mano e lane pure. La nostra cerniera, con il suo distintivo rosa neon, non è solo una chiusura, è un gioiello progettato su misura e placcato in oro per garantire durata e scorrevolezza perfette.",
             footer_mission: "Creando oggetti di lusso con un'anima inaspettata. Design concettuale e artigianato per la donna moderna.",
             footer_help: "Aiuto",
             footer_contact: "Contatto",
             footer_faq: "Domande Frequenti (FAQ)",
-            footer_shipping: "Spedizioni e Resi",
+            // footer_shipping: "Spedizioni e Resi", // Eliminado
             footer_care: "Cura del Prodotto",
             footer_company: "Azienda",
             footer_story: "La Nostra Storia",
@@ -187,21 +175,21 @@ document.addEventListener('DOMContentLoaded', function() {
             contact_send: "Invia Messaggio",
             faq_title: "Domande Frequenti",
             faq_content: "<strong>Quali sono le opzioni di spedizione?</strong><br>Offriamo spedizioni standard ed express in tutto il mondo. I costi e i tempi di consegna sono calcolati al momento del pagamento.<br><br><strong>Posso restituire un prodotto?</strong><br>Sì, accettiamo resi entro 14 giorni dalla ricezione dell'ordine. Il prodotto deve essere in perfette condizioni e con il suo imballaggio originale.",
-            shipping_title: "Spedizioni e Resi",
-            shipping_content: "<p>Tutti gli ordini vengono elaborati entro 2 giorni lavorativi. Le spedizioni standard impiegano 5-7 giorni lavorativi, e quelle express tra 1-3 giorni. Riceverai un numero di tracciamento una volta che il tuo ordine sarà stato spedito. Per i resi, ti preghiamo di contattarci tramite il nostro modulo di contatto per avviare il processo.</p>",
+            // shipping_title: "Spedizioni e Resi", // Eliminado
+            // shipping_content: "<p>Tutti gli ordini vengono elaborati entro 2 giorni lavorativi. Le spedizioni standard impiegano 5-7 giorni lavorativi, e quelle express tra 1-3 giorni. Riceverai un numero di tracciamento una volta che il tuo ordine sarà stato spedito. Per i resi, ti preghiamo di contattarci tramite il nostro modulo di contatto per avviare il processo.</p>", // Eliminado
             care_title: "Cura del Prodotto",
             care_content: "<p>I nostri articoli sono realizzati con materiali di altissima qualità. Per mantenerne la bellezza, evita l'esposizione prolungata alla luce solare diretta e all'umidità. Riponi la tua borsa nella sua sacca antipolvere quando non la usi. Per la pulizia, consulta uno specialista nel trattamento delle pelli.</p>",
             story_title: "La Nostra Storia",
-            story_content: "<p>X'M è nata da un desiderio: quello di creare oggetti che non fossero solo belli, ma che avessero un'anima. Fondata da Gemma Juan Garcia, il marchio cerca di sfidare la percezione tradizionale del lusso, fondendo l'arte concettuale con l'artigianato più meticoloso. Ogni collezione è un capitolo di questa storia, una esplorazione di forme, texture ed emozioni.</p>",
+            story_content: "<p>X'M è nata da un desiderio: quello di creare oggetti che non fossero solo belli, ma che avessero un'anima. La marca cerca di sfidare la percezione tradizionale del lusso, fondendo l'artesanato concettuale con l'artesanato più meticoloso. Ogni collezione è un capitolo di questa storia, un'esplorazione di forme, texture ed emozioni.</p>",
             sustainability_title: "Sostenibilità",
-            sustainability_content: "<p>Siamo impegnati in un lusso consapevole. Lavoriamo con laboratori locali per minimizzare la nostra impronta di carbonio e garantire condizioni di lavoro eque. Diamo priorità all'uso di materiali responsabili e cerchiamo costantemente modi per innovare in termini di sostenibilità, dal nostro packaging riciclabile alla selezione di pelli provenienti da fornitori certificati.</p>",
+            sustainability_content: "<p>Siamo impegnati in un lusso consapevole. Lavoriamo con laboratori locali per minimizzare la nostra impronta di carbonio e garantire condizioni di lavoro eque. Diamo priorità all'uso di materiali responsabili e cerchiamo costantemente modi per innovare in termini di sostenibilità, dal nostro packaging reciclabbile alla selezione di pelli provenienti da fornitori certificati.</p>",
             press_title: "Stampa",
             press_content: "<p>Per richieste di stampa, interviste o richieste di materiale grafico, si prega di contattare il nostro ufficio comunicazione all'indirizzo <a href='mailto:press@xm-brand.com' class='text-pink-500 hover:underline'>press@xm-brand.com</a>.</p>"
         },
         en: {
             nav_manifesto: "Manifest",
             nav_collection: "Collection",
-            nav_designer: "Creator",
+            nav_contact: "Contact", // Nuevo
             nav_craftsmanship: "Craftsmanship",
             hero_slogan: "The art of carrying a secret.",
             manifesto_title: "Our Manifesto",
@@ -213,16 +201,13 @@ document.addEventListener('DOMContentLoaded', function() {
             lucid_desc: "An exercise in radical honesty. A transparent acrylic sphere for the woman who has nothing to hide.",
             strike_desc: "A nod to pop culture. High-gloss black patent leather that evokes a luxury bowling ball.",
             niu_desc: "A return to essence, wrapped in XXL merino wool yarn. Luxury is warmth and comfort.",
-            designer_title: "The Vision of a Creator",
-            designer_quote1: "\"I have always been obsessed with the relationship between the body and the object. A bag is not just a container, it is a companion. With Sphère, I wanted to explore a deeper, almost symbiotic connection.\"",
-            designer_quote2: "For me, design must provoke an emotion, it must be a conversation piece. X'M is the result of this search: beautiful objects with an unexpected soul.",
             craftsmanship_title: "The Soul of Craftsmanship",
             craftsmanship_text: "Each X'M piece is built with patience and precision in local artisan workshops. We select only the best materials: soft nappa leathers, hand-polished acrylics, and pure wools. Our zipper, with its distinctive neon pink, is not just a closure, it's a custom-designed, gold-plated jewel to ensure perfect durability and glide.",
             footer_mission: "Creating luxury objects with an unexpected soul. Conceptual design and craftsmanship for the modern woman.",
             footer_help: "Help",
             footer_contact: "Contact",
             footer_faq: "Frequently Asked Questions (FAQ)",
-            footer_shipping: "Shipping & Returns",
+            // footer_shipping: "Shipping & Returns", // Eliminado
             footer_care: "Product Care",
             footer_company: "Company",
             footer_story: "Our Story",
@@ -236,12 +221,12 @@ document.addEventListener('DOMContentLoaded', function() {
             contact_send: "Send Message",
             faq_title: "Frequently Asked Questions",
             faq_content: "<strong>What are the shipping options?</strong><br>We offer standard and express worldwide shipping. Costs and delivery times are calculated at checkout.<br><br><strong>Can I return a product?</strong><br>Yes, we accept returns within 14 days of receiving your order. The product must be in perfect condition and with its original packaging.",
-            shipping_title: "Shipping & Returns",
-            shipping_content: "<p>All orders are processed within 2 business days. Standard shipping takes 5-7 business days, and express takes 1-3 days. You will receive a tracking number once your order has shipped. For returns, please contact us via our contact form to initiate the process.</p>",
+            // shipping_title: "Shipping & Returns", // Eliminado
+            // shipping_content: "<p>All orders are processed within 2 business days. Standard shipping takes 5-7 business days, and express takes 1-3 days. You will receive a tracking number once your order has shipped. For returns, please contact us via our contact form to initiate the process.</p>", // Eliminado
             care_title: "Product Care",
             care_content: "<p>Our pieces are made with the highest quality materials. To maintain their beauty, avoid prolonged exposure to direct sunlight and moisture. Store your bag in its dust bag when not in use. For cleaning, consult a leather treatment specialist.</p>",
             story_title: "Our Story",
-            story_content: "<p>X'M was born from a desire: to create objects that are not only beautiful, but have a soul. Founded by Gemma Juan Garcia, the brand seeks to challenge the traditional perception of luxury, merging conceptual art with the most meticulous craftsmanship. Each collection is a chapter of this story, an exploration of forms, textures, and emotions.</p>",
+            story_content: "<p>X'M was born from a desire: to create objects that are not only beautiful, but have a soul. The brand seeks to challenge the traditional perception of luxury, merging conceptual art with the most meticulous craftsmanship. Each collection is a chapter of this story, an exploration of forms, textures, and emotions.</p>",
             sustainability_title: "Sustainability",
             sustainability_content: "<p>We are committed to conscious luxury. We work with local workshops to minimize our carbon footprint and ensure fair labor conditions. We prioritize the use of responsible materials and constantly seek ways to innovate in sustainability, from our recyclable packaging to the selection of leathers from certified suppliers.</p>",
             press_title: "Press",
@@ -276,23 +261,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function setLanguage(lang) {
         document.documentElement.lang = lang;
+
+        // Eliminar la clase neon-pink-text de cualquier idioma que la tenga actualmente
+        currentLangText.classList.remove('neon-pink-text');
         currentLangText.textContent = lang.toUpperCase();
+        currentLangText.classList.add('neon-pink-text'); // Añadir clase para color rosa neón
+
         const elements = document.querySelectorAll('[data-lang]');
         elements.forEach(el => {
             const key = el.getAttribute('data-lang');
-            // Verificar si la traducción existe para el idioma y la clave
             if (translations[lang] && translations[lang][key]) {
                 el.innerHTML = translations[lang][key];
             } else {
-                // Opcional: si la traducción no existe para un idioma, podrías dejar el contenido original
-                // o mostrar un mensaje de depuración.
                 console.warn(`Missing translation for language '${lang}' and key '${key}'`);
             }
         });
     }
 
     // Inicializar el idioma al cargar la página
-    setLanguage('ca'); // Puedes cambiar 'ca' por el idioma predeterminado que desees 
+    setLanguage('ca'); // Puedes cambiar 'ca' por el idioma predeterminado que desees
 
     // --- LÓGICA PARA LAS VENTANAS MODALES ---
     const modalTriggers = document.querySelectorAll('.modal-trigger');
