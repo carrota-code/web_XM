@@ -9,6 +9,6 @@
     
     <circle cx="50" cy="50" r="48" fill="#FF007F"/>
 
-    <text x="50" y="55" class="logo-text">
+    <text x="50" y="50" class="logo-text">
         <tspan fill="#FFFFFF">X</tspan> <tspan fill="#111111" dx="-0.3em">'</tspan> <tspan fill="#FFFFFF" dx="-0.3em">M</tspan> </text>
 </svg>
