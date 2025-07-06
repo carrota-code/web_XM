@@ -23,7 +23,16 @@
 <div class="flex items-center">
 <ul class="hidden md:flex items-center space-x-8 text-sm uppercase tracking-widest">
 <li><a href="#manifesto" class="hover:text-white transition-colors duration-300" data-lang="nav_manifesto">Manifest</a></li>
-<li><a href="#collection" class="hover:text-white transition-colors duration-300" data-lang="nav_collection">Col·lecció</a></li>
+<li class="relative" id="collection-dropdown-container">
+    <button id="collection-button" class="flex items-center hover:text-white transition-colors duration-300 uppercase">
+        <span data-lang="nav_collection">Col·lecció</span>
+        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+    </button>
+    <ul id="collection-menu" class="absolute left-0 mt-2 w-48 bg-black bg-opacity-90 rounded-md shadow-lg hidden py-1">
+        <li><a href="#collection" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800" data-lang="collection_sphere">Col·lecció Sphère</a></li>
+        <li><a href="#manchon-collection" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800" data-lang="collection_manchon">Manchon Connect</a></li>
+    </ul>
+</li>
 <li><a href="#" class="hover:text-white transition-colors duration-300 modal-trigger" data-modal="contact" data-lang="nav_contact">Contacte</a></li>
 <li><a href="#craftsmanship" class="hover:text-white transition-colors duration-300" data-lang="nav_craftsmanship">Artesania</a></li>
 </ul>
@@ -69,6 +78,7 @@ No creem accessoris, creem secrets per compartir.</p>
 </div>
 </section>
 
+<!-- SECCIÓ COL·LECCIÓ SPHÈRE -->
 <section id="collection" class="py-20 md:py-32">
 <div class="container mx-auto px-6">
 <div class="text-center mb-16 scroll-reveal">
@@ -106,6 +116,31 @@ Pell de xarol negre d'alta brillantor que evoca una bola de bitlles de luxe.</p>
 </div>
 </div>
 </section>
+
+<!-- SECCIÓ MANCHON CONNECT ACTUALITZADA -->
+<section id="manchon-collection" class="py-20 md:py-32 bg-[#1a1a1a]">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16 scroll-reveal">
+            <h2 class="text-4xl md:text-5xl font-title mb-4" data-lang="manchon_title">Manchon Connect</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto" data-lang="manchon_subtitle">La fusió perfecta entre calidesa, tecnologia i estil urbà.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="scroll-reveal">
+                <div class="bg-black p-4 rounded-lg shadow-2xl flex justify-center">
+                    <img src="assets/images/manchon_connect.png" alt="Detall del Bolso Manchon Connect" class="max-w-full max-h-full object-contain rounded-md transform hover:scale-105 transition-transform duration-500">
+                </div>
+            </div>
+            <div class="scroll-reveal" style="transition-delay: 0.2s;">
+                <h3 class="text-3xl font-title mb-4">Manchon Connect</h3>
+                <p class="text-lg text-gray-300 mb-8 leading-relaxed" data-lang="manchon_desc">La calidesa urbana es troba amb la connectivitat en el Manchon Connect. Aquest disseny reinventa el clàssic calentador de mans, oferint un refugi de suau pel sintètic i un innovador butxaca exterior per mantenir el teu mòbil segur i sempre accessible.</p>
+                <div class="bg-black p-2 rounded-lg shadow-lg inline-block">
+                    <img src="assets/images/manchon_connect_model.png" alt="Model amb el bolso Manchon Connect" class="w-1/4 h-auto object-cover rounded-md">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <section id="craftsmanship" class="py-20 md:py-32">
 <div class="container mx-auto px-6 text-center">
