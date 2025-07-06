@@ -91,3 +91,38 @@ h1, h2, h3, .font-title {
     color: #fff;
 }
 
+/* ELS PER AL CARRUSEL */
+.product-carousel {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px; 
+    height: 300px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0.1;
+    transform: scale(0.7);
+}
+
+/* L'slide actiu (central) serà completament visible i una mica més gran */
+.swiper-slide-active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 10;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #FF007F; /* Color rosa neó per a les fletxes */
+    transform: scale(0.7);
+}

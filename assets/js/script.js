@@ -4,12 +4,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const translations = {
         ca: {
             nav_manifesto: "Manifest",
-            nav_collection: "Col·lecció",
+            nav_collection: "COL·LECCIÓ",
             nav_contact: "Contacte",
-            nav_craftsmanship: "Artesania",
+            nav_craftsmanship: "ARTESANIA",
             collection_sphere: "Col·lecció Sphère",
             collection_manchon: "Manchon Connect",
-            collection_disc: "Col·lecció DISC",
+            collection_disc: "Col·lecció Disc",
             hero_slogan: "L'art de portar un secret.",
             manifesto_title: "El Nostre Manifest",
             manifesto_text: "X'M neix a la intersecció de l'artesania i el concepte. Creiem en un luxe que no crida, sinó que xiuxiueja. En peces que no només vesteixen, sinó que dialoguen amb qui les porta. Cada disseny és una declaració d'intencions: una fusió d'elegància atemporal i una audàcia que desafia el present. No creem accessoris, creem secrets per compartir.",
@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', function() {
             niu_desc: "Un retorn a l'essència, embolicat en fil de llana merino XXL. El luxe és calidesa i confort.",
             manchon_title: "Manchon Connect",
             manchon_subtitle: "La fusió perfecta entre calidesa, tecnologia i estil urbà.",
-            manchon_desc: "La calidesa urbana es troba amb la connectivitat en el Manchon Connect. Aquest disseny reinventa el clàssic calentador de mans, oferint un refugi de suau pelo sintètic i un innovador butxaca exterior per mantenir el teu mòbil segur i sempre accessible.",
-            disc_title: "Col·lecció DISC",
+            manchon_desc: "La calidesa urbana es troba amb la connectivitat en el Manchon Connect. Aquest disseny reinventa el clàssic calentador de mans, oferint un refugi de suau pel sintètic i un innovador butxaca exterior per mantenir el teu mòbil segur i sempre accessible.",
+            disc_title: "Col·lecció Disc",
             disc_subtitle: "Geometria pura i disseny unisex per a l'explorador urbà.",
-            disc_desc: "DISC és un exercici de minimalisme funcional. La seva forma de disc perfecte, realitzada en pell negra mat, ofereix una silueta neta i contundent. La corretja híbrida de pell i niló tècnic garanteix comoditat i durabilitat, mentre que el logo metàl·lic i la cremallera rosa neó aporten el segell inconfusible de X'M.",
+            disc_desc: "Disc és un exercici de minimalisme funcional. La seva forma de disc perfecte, realitzada en pell negra mat, ofereix una silueta neta i contundent. La corretja híbrida de pell i niló tècnic garanteix comoditat i durabilitat, mentre que el logo en alt relleu i la cremallera rosa neó aporten el segell inconfusible de X'M.",
             craftsmanship_title: "L'Ànima de l'Artesania",
             craftsmanship_text: "Cada peça X'M es construeix amb paciència i precisió en tallers artesans locals. Seleccionem només els millors materials: pells de napa suau, acrílics polits a mà i llanes pures. La nostra cremallera, amb el seu distintiu rosa neó, no és només un tancament, és una joia dissenyada a mida i banyada en or per garantir una durabilitat i un lliscar perfectes.",
             footer_mission: "Creant objectes de luxe amb una ànima inesperada. Disseny conceptual i artesania per a la dona moderna.",
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
             faq_title: "Preguntes Freqüents",
             faq_content: "<strong>Quines són les opcions d'enviament?</strong><br>Oferim enviament estàndard i exprés a tot el món. Els costos i temps de lliurament es calculen a la pantalla de pagament.<br><br><strong>Puc retornar un producte?</strong><br>Sí, acceptem devolucions dins dels 14 dies posteriors a la recepció de la comanda. El producte ha d'estar en perfectes condicions i amb el seu embalatge original.",
             care_title: "Cura del Producte",
-            care_content: "<p>Les nostres peces estan fetes amb materials de la més alta qualitat. Per mantenir la seva bellesa, evita l'exposició prolongada a la llum solar directa i a la humitat. Guarda el teu bolso a la seva bossa guardapols quan no l'utilitzis. Per a la neteja, consulta un especialista en tractament de pells.</p>",
+            care_content: "<p>Les nostres peces estan fetes amb materials de la més alta qualitat. Per mantenir la seva bellesa, evita l'exposició prolongada a la llum solar directa i a la humitat. Guarda el teu bolso a la seva bossa guardapols quan no l'utilitzes. Per a la neteja, consulta un especialista en tractament de pells.</p>",
             story_title: "La Nostra Història",
             story_content: "<p>X'M va néixer d'un desig: el de crear objectes que no només fossin bells, sinó que tinguessin una ànima. La marca busca desafiar la percepció tradicional del luxe, fusionant l'art conceptual amb l'artesania més meticulosa. Cada col·lecció és un capítol d'aquesta història, una exploració de formes, textures i emocions.</p>",
             sustainability_title: "Sostenibilitat",
@@ -57,44 +57,176 @@ document.addEventListener('DOMContentLoaded', function() {
             cart_message: "Diga'ns quin és el teu desig i et direm com el podem fer realitat. Enviem a tot el mon."
         },
         es: {
-            nav_collection: "Colección",
+            nav_manifesto: "Manifiesto",
+            nav_collection: "COLECCIÓN",
+            nav_contact: "Contacto",
+            nav_craftsmanship: "ARTESANÍA",
             collection_sphere: "Colección Sphère",
             collection_manchon: "Manchon Connect",
-            collection_disc: "Colección DISC",
-            disc_title: "Colección DISC",
+            collection_disc: "Colección Disc",
+            hero_slogan: "El arte de llevar un secreto.",
+            manifesto_title: "Nuestro Manifiesto",
+            manifesto_text: "X'M nace en la intersección de la artesanía y el concepto. Creemos en un lujo que no grita, sino que susurra. En piezas que no solo visten, sino que dialogan con quien las lleva. Cada diseño es una declaración de intenciones: una fusión de elegancia atemporal y una audacia que desafía el presente. No creamos accesorios, creamos secretos para compartir.",
+            collection_title: "Colección Sphère",
+            collection_subtitle: "Nuestra primera colección explora la forma perfecta: la esfera. Un universo cerrado que esconde una funcionalidad íntima y radical.",
+            noir_desc: "Más que un bolso, una declaración. Revestido de la más suave piel de conejo negra, es una experiencia táctil inolvidable.",
+            icon_desc: "Un diseño gráfico que reinterpreta un clásico universal bajo el prisma del lujo, alternando piel napa blanca y ante negro.",
+            lucid_desc: "Un ejercicio de honestidad radical. Una esfera de acrílico transparente para la mujer que no tiene nada que ocultar.",
+            strike_desc: "Un guiño a la cultura pop. Piel de charol negro de alto brillo que evoca una bola de bolos de lujo.",
+            niu_desc: "Un retorno a la esencia, envuelto en hilo de lana merino XXL. El lujo es calidez y confort.",
+            manchon_title: "Manchon Connect",
+            manchon_subtitle: "La fusión perfecta entre calidez, tecnología y estilo urbano.",
+            manchon_desc: "El calor urbano se encuentra con la conectividad en el Manchon Connect. Este diseño reinventa el clásico calentador de manos, ofreciendo un refugio de suave pelo sintético y un innovador bolsillo exterior para mantener tu móvil seguro y siempre accesible.",
+            disc_title: "Colección Disc",
             disc_subtitle: "Geometría pura y diseño unisex para el explorador urbano.",
-            disc_desc: "DISC es un ejercicio de minimalismo funcional. Su forma de disco perfecto, realizada en piel negra mate, ofrece una silueta limpia y contundente. La correa híbrida de piel y nailon técnico garantiza comodidad y durabilidad, mientras que el logo metálico y la cremallera rosa neón aportan el sello inconfundible de X'M.",
-            // ...rest of Spanish translations
+            disc_desc: "Disc es un ejercicio de minimalismo funcional. Su forma de disco perfecto, realizada en piel negra mate, ofrece una silueta limpia y contundente. La correa híbrida de piel y nailon técnico garantiza comodidad y durabilidad, mientras que el logo en altorrelieve y la cremallera rosa neón aportan el sello inconfundible de X'M.",
+            craftsmanship_title: "El Alma de la Artesanía",
+            craftsmanship_text: "Cada pieza X'M se construye con paciencia y precisión en talleres artesanos locales. Seleccionamos solo los mejores materiales: pieles de napa suave, acrílicos pulidos a mano y lanas puras. Nuestra cremallera, con su distintivo rosa neón, no es solo un cierre, es una joya diseñada a medida y bañada en oro para garantizar una durabilidad y un deslizamiento perfectos.",
+            footer_mission: "Creando objetos de lujo con un alma inesperada. Diseño conceptual y artesanía para la mujer moderna.",
+            footer_help: "Ayuda",
+            footer_contact: "Contacto",
+            footer_faq: "Preguntas Frecuentes (FAQ)",
+            footer_care: "Cuidado del Producto",
+            footer_company: "Empresa",
+            footer_story: "Nuestra Historia",
+            footer_sustainability: "Sostenibilidad",
+            footer_press: "Prensa",
+            footer_copyright: "© 2025 X'M. Todos los derechos reservados.",
+            contact_title: "Contacto",
+            cart_title: "Compra",
+            contact_name: "Nombre",
+            contact_email: "Email",
+            contact_message: "Mensaje",
+            contact_send: "Enviar Mensaje",
+            faq_title: "Preguntas Frecuentes",
+            faq_content: "<strong>¿Cuáles son las opciones de envío?</strong><br>Ofrecemos envío estándar y exprés a todo el mundo. Los costes y tiempos de entrega se calculan en la pantalla de pago.<br><br><strong>¿Puedo devolver un producto?</strong><br>Sí, aceptamos devoluciones dentro de los 14 días posteriores a la recepción del pedido. El producto debe estar en perfectas condiciones y con su embalaje original.",
+            care_title: "Cuidado del Producto",
+            care_content: "<p>Nuestras piezas están hechas con materiales de la más alta calidad. Para mantener su belleza, evita la exposición prolongada a la luz solar directa y a la humedad. Guarda tu bolso en su bolsa guardapolvo cuando no lo utilices. Para la limpieza, consulta a un especialista en tratamiento de pieles.</p>",
+            story_title: "Nuestra Historia",
+            story_content: "<p>X'M nació de un deseo: el de crear objetos que no solo fueran bellos, sino que tuvieran un alma. La marca busca desafiar la percepción tradicional del lujo, fusionando el arte conceptual con la artesanía más meticulosa. Cada colección es un capítulo de esta historia, una exploración de formas, texturas y emociones.</p>",
+            sustainability_title: "Sostenibilidad",
+            sustainability_content: "<p>Estamos comprometidos con un lujo consciente. Trabajamos con talleres locales para minimizar nuestra huella de carbono y garantizar condiciones laborales justas. Priorizamos el uso de materiales responsables y buscamos constantemente maneras de innovar en sostenibilidad, desde nuestro packaging reciclable hasta la selección de pieles de proveedores certificados.</p>",
+            press_title: "Prensa",
+            press_content: "<p>Para consultas de prensa, entrevistas o solicitudes de material gráfico, por favor, contacte con nuestro departamento de comunicación en <a href='mailto:press@xm-brand.com' class='text-pink-500 hover:underline'>press@xm-brand.com</a>.</p>",
+            cart_message: "Dinos cuál es tu deseo y te diremos cómo podemos hacerlo realidad. Enviamos a todo el mundo."
         },
         fr: {
-            nav_collection: "Collection",
+            nav_manifesto: "Manifeste",
+            nav_collection: "COLLECTION",
+            nav_contact: "Contact",
+            nav_craftsmanship: "ARTISANAT",
             collection_sphere: "Collection Sphère",
             collection_manchon: "Manchon Connect",
-            collection_disc: "Collection DISC",
-            disc_title: "Collection DISC",
+            collection_disc: "Collection Disc",
+            hero_slogan: "L'art de porter un secret.",
+            manifesto_title: "Notre Manifeste",
+            manifesto_text: "X'M naît à l'intersection de l'artisanat et du concept. Nous croyons en un luxe qui ne crie pas, mais qui chuchote. En des pièces qui non seulement habillent, mais qui dialoguent avec celle qui les porte. Chaque design est une déclaration d'intention : une fusion d'élégance intemporelle et d'une audace qui défie le présent. Nous ne créons pas des accessoires, nous créons des secrets à partager.",
+            collection_title: "Collection Sphère",
+            collection_subtitle: "Notre première collection explore la forme parfaite : la sphère. Un univers clos qui cache une fonctionnalité intime et radicale.",
+            noir_desc: "Plus qu'un sac, une déclaration. Revêtu de la plus douce peau de lapin noire, c'est une expérience tactile inoubliable.",
+            icon_desc: "Un design graphique qui réinterprète un classique universel sous le prisme du luxe, alternant cuir nappa blanc et daim noir.",
+            lucid_desc: "Un exercice d'honnêteté radicale. Une sphère en acrylique transparent pour la femme qui n'a rien à cacher.",
+            strike_desc: "Un clin d'œil à la culture pop. Cuir verni noir haute brillance qui évoque une boule de bowling de luxe.",
+            niu_desc: "Un retour à l'essentiel, enveloppé de fil de laine mérinos XXL. Le luxe, c'est la chaleur et le confort.",
+            manchon_title: "Manchon Connect",
+            manchon_subtitle: "La fusion parfaite entre chaleur, technologie et style urbain.",
+            manchon_desc: "La chaleur urbaine rencontre la connectivité dans le Manchon Connect. Ce design réinvente le chauffe-mains classique, offrant un refuge en douce fourrure synthétique et une poche extérieure innovante pour garder votre mobile en sécurité et toujours accessible.",
+            disc_title: "Collection Disc",
             disc_subtitle: "Géométrie pure et design unisexe pour l'explorateur urbain.",
-            disc_desc: "DISC est un exercice de minimalisme fonctionnel. Sa forme de disque parfait, en cuir noir mat, offre une silhouette nette et puissante. La sangle hybride en cuir et nylon technique assure confort et durabilité, tandis que le logo métallique et la fermeture éclair rose néon apportent le sceau inimitable de X'M.",
-            // ...rest of French translations
+            disc_desc: "Disc est un exercice de minimalisme fonctionnel. Sa forme de disque parfait, en cuir noir mat, offre une silhouette nette et puissante. La sangle hybride en cuir et nylon technique assure confort et durabilité, tandis que le logo en relief et la fermeture éclair rose néon apportent le sceau inimitable de X'M.",
+            craftsmanship_title: "L'Âme de l'Artisanat",
+            craftsmanship_text: "Chaque pièce X'M est construite avec patience et précision dans des ateliers artisans locaux. Nous sélectionnons uniquement les meilleurs matériaux : cuirs nappa souples, acryliques polis à la main et laines pures. Notre fermeture éclair, avec sa distinctive couleur rose néon, n'est pas seulement une fermeture, c'est un bijou conçu sur mesure et plaqué or pour garantir une durabilité et une glisse parfaites.",
+            footer_mission: "Créer des objets de luxe avec une âme inattendue. Design conceptuel et artisanat pour la femme moderne.",
+            footer_help: "Aide",
+            footer_contact: "Contact",
+            footer_faq: "Questions Fréquentes (FAQ)",
+            footer_care: "Entretien du Produit",
+            footer_company: "Entreprise",
+            footer_story: "Notre Histoire",
+            footer_sustainability: "Durabilité",
+            footer_press: "Presse",
+            footer_copyright: "© 2025 X'M. Tous droits réservés.",
+            contact_title: "Contact",
+            cart_title: "Achat",
+            contact_name: "Nom",
+            contact_email: "Email",
+            contact_message: "Message",
+            contact_send: "Envoyer le Message",
+            cart_message: "Dites-nous quel est votre désir et nous vous dirons comment nous pouvons le réaliser. Nous expédions dans le monde entier."
         },
         it: {
-            nav_collection: "Collezione",
+            nav_manifesto: "Manifesto",
+            nav_collection: "COLLEZIONE",
+            nav_contact: "Contatto",
+            nav_craftsmanship: "ARTIGIANATO",
             collection_sphere: "Collezione Sphère",
             collection_manchon: "Manchon Connect",
-            collection_disc: "Collezione DISC",
-            disc_title: "Collezione DISC",
+            collection_disc: "Collezione Disc",
+            hero_slogan: "L'arte di portare un segreto.",
+            manifesto_title: "Il Nostro Manifesto",
+            manifesto_text: "X'M nasce all'intersezione tra artigianato e concetto. Crediamo in un lusso che non urla, ma sussurra. In pezzi che non solo vestono, ma dialogano con chi li indossa. Ogni design è una dichiarazione d'intenti: una fusione di eleganza senza tempo e un'audacia che sfida il presente. Non creiamo accessori, creiamo segreti da condividere.",
+            manchon_title: "Manchon Connect",
+            manchon_subtitle: "La fusione perfetta tra calore, tecnologia e stile urbano.",
+            manchon_desc: "Il calore urbano incontra la connettività nel Manchon Connect. Questo design reinventa il classico scaldamani, offrendo un rifugio in morbida pelliccia sintetica e un'innovativa tasca esterna per tenere il cellulare al sicuro e sempre accessibile.",
+            disc_title: "Collezione Disc",
             disc_subtitle: "Geometria pura e design unisex per l'esploratore urbano.",
-            disc_desc: "DISC è un esercizio di minimalismo funzionale. La sua forma a disco perfetto, realizzata in pelle nera opaca, offre una silhouette pulita e decisa. La tracolla ibrida in pelle e nylon tecnico garantisce comfort e resistenza, mentre il logo metallico e la cerniera rosa neon aggiungono il sigillo inconfondibile di X'M.",
-            // ...rest of Italian translations
+            disc_desc: "Disc è un esercizio di minimalismo funzionale. La sua forma a disco perfetto, realizzata in pelle nera opaca, offre una silhouette pulita e decisa. La tracolla ibrida in pelle e nylon tecnico garantisce comfort e resistenza, mentre il logo in rilievo e la cerniera rosa neon aggiungono il sigillo inconfondibile di X'M.",
+            craftsmanship_title: "L'Anima dell'Artigianato",
+            craftsmanship_text: "Ogni pezzo X'M è costruito con pazienza e precisione in laboratori artigianali locali. Selezioniamo solo i materiali migliori: pelli di nappa morbida, acrilici lucidati a mano e lane pure. La nostra cerniera, con il suo distintivo rosa neon, non è solo una chiusura, è un gioiello su misura e placcato in oro per garantire durata e scorrevolezza perfette.",
+            footer_mission: "Creare oggetti di lusso con un'anima inaspettata. Design concettuale e artigianato per la donna moderna.",
+            footer_help: "Aiuto",
+            footer_contact: "Contatto",
+            footer_faq: "Domande Frequenti (FAQ)",
+            footer_care: "Cura del Prodotto",
+            footer_company: "Azienda",
+            footer_story: "La Nostra Storia",
+            footer_sustainability: "Sostenibilità",
+            footer_press: "Stampa",
+            footer_copyright: "© 2025 X'M. Tutti i diritti riservati.",
+            contact_title: "Contatto",
+            cart_title: "Acquisto",
+            contact_name: "Nome",
+            contact_email: "Email",
+            contact_message: "Messaggio",
+            contact_send: "Invia Messaggio",
+            cart_message: "Dicci qual è il tuo desiderio e ti diremo come possiamo realizzarlo. Spediamo in tutto il mondo."
         },
         en: {
-            nav_collection: "Collection",
+            nav_manifesto: "Manifesto",
+            nav_collection: "COLLECTION",
+            nav_contact: "Contact",
+            nav_craftsmanship: "CRAFTSMANSHIP",
             collection_sphere: "Sphère Collection",
             collection_manchon: "Manchon Connect",
-            collection_disc: "DISC Collection",
-            disc_title: "DISC Collection",
+            collection_disc: "Disc Collection",
+            hero_slogan: "The art of carrying a secret.",
+            manifesto_title: "Our Manifesto",
+            manifesto_text: "X'M is born at the intersection of craftsmanship and concept. We believe in a luxury that doesn't shout, but whispers. In pieces that not only dress but converse with the wearer. Each design is a statement of intent: a fusion of timeless elegance and an audacity that challenges the present. We don't create accessories; we create secrets to share.",
+            manchon_title: "Manchon Connect",
+            manchon_subtitle: "The perfect fusion of warmth, technology, and urban style.",
+            manchon_desc: "Urban warmth meets connectivity in the Manchon Connect. This design reinvents the classic hand warmer, offering a soft synthetic fur refuge and an innovative outer pocket to keep your mobile safe and always accessible.",
+            disc_title: "Disc Collection",
             disc_subtitle: "Pure geometry and unisex design for the urban explorer.",
-            disc_desc: "DISC is an exercise in functional minimalism. Its perfect disc shape, crafted from matte black leather, offers a clean and powerful silhouette. The hybrid leather and technical nylon strap ensures comfort and durability, while the metallic logo and neon pink zipper provide the unmistakable X'M seal.",
-            // ...rest of English translations
+            disc_desc: "Disc is an exercise in functional minimalism. Its perfect disc shape, crafted from matte black leather, offers a clean and powerful silhouette. The hybrid leather and technical nylon strap ensures comfort and durability, while the embossed logo and neon pink zipper provide the unmistakable X'M seal.",
+            craftsmanship_title: "The Soul of Craftsmanship",
+            craftsmanship_text: "Each X'M piece is built with patience and precision in local artisan workshops. We select only the finest materials: soft nappa leathers, hand-polished acrylics, and pure wools. Our zipper, with its distinctive neon pink, is not just a closure; it is a custom-designed, gold-plated jewel to ensure perfect durability and slide.",
+            footer_mission: "Creating luxury objects with an unexpected soul. Conceptual design and craftsmanship for the modern woman.",
+            footer_help: "Help",
+            footer_contact: "Contact",
+            footer_faq: "Frequently Asked Questions (FAQ)",
+            footer_care: "Product Care",
+            footer_company: "Company",
+            footer_story: "Our Story",
+            footer_sustainability: "Sustainability",
+            footer_press: "Press",
+            footer_copyright: "© 2025 X'M. All rights reserved.",
+            contact_title: "Contact",
+            cart_title: "Purchase",
+            contact_name: "Name",
+            contact_email: "Email",
+            contact_message: "Message",
+            contact_send: "Send Message",
+            cart_message: "Tell us your desire, and we'll tell you how we can make it happen. We ship worldwide."
         }
     };
 
@@ -234,5 +366,60 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll();
 
-});
+    // --- INICIALITZACIÓ DEL CARRUSEL ---
+    const swiperWrapper = document.querySelector('.product-carousel .swiper-wrapper');
+    if (swiperWrapper) {
+        const slidesData = [
+            { src: 'assets/images/disc.png', alt: 'Bolso DISC' },
+            { src: 'assets/images/sphere_icon.png', alt: 'Bolso Sphère Icon' },
+            { src: 'assets/images/manchon_connect.png', alt: 'Bolso Manchon Connect' },
+            { src: 'assets/images/sphere_noir.png', alt: 'Bolso Sphère Noir' },
+            { src: 'assets/images/sphere_lucid.png', alt: 'Bolso Sphère Lucid' },
+            { src: 'assets/images/sphere_strike.png', alt: 'Bolso Sphère Strike' },
+            { src: 'assets/images/sphere_niu.png', alt: 'Bolso Sphère Niu' }
+        ];
 
+        // Aleatoritzar l'array de slides
+        for (let i = slidesData.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [slidesData[i], slidesData[j]] = [slidesData[j], slidesData[i]];
+        }
+
+        // Buidar el contenidor i tornar a omplir amb l'ordre aleatori
+        swiperWrapper.innerHTML = '';
+        slidesData.forEach(data => {
+            const newSlide = document.createElement('div');
+            newSlide.className = 'swiper-slide';
+            const img = document.createElement('img');
+            img.src = data.src;
+            img.alt = data.alt;
+            newSlide.appendChild(img);
+            swiperWrapper.appendChild(newSlide);
+        });
+
+        var swiper = new Swiper('.product-carousel', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 3,
+    loop: true,
+    speed: 500,
+            autoplay: {
+                delay: 500,
+                disableOnInteraction: false,
+            },
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 50,
+                depth: 100,
+                modifier: 1,
+                slideShadows: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    }
+
+});
