@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
             nav_craftsmanship: "Artesania",
             collection_sphere: "Col·lecció Sphère",
             collection_manchon: "Manchon Connect",
+            collection_disc: "Col·lecció DISC",
             hero_slogan: "L'art de portar un secret.",
             manifesto_title: "El Nostre Manifest",
             manifesto_text: "X'M neix a la intersecció de l'artesania i el concepte. Creiem en un luxe que no crida, sinó que xiuxiueja. En peces que no només vesteixen, sinó que dialoguen amb qui les porta. Cada disseny és una declaració d'intencions: una fusió d'elegància atemporal i una audàcia que desafia el present. No creem accessoris, creem secrets per compartir.",
@@ -22,6 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
             manchon_title: "Manchon Connect",
             manchon_subtitle: "La fusió perfecta entre calidesa, tecnologia i estil urbà.",
             manchon_desc: "La calidesa urbana es troba amb la connectivitat en el Manchon Connect. Aquest disseny reinventa el clàssic calentador de mans, oferint un refugi de suau pelo sintètic i un innovador butxaca exterior per mantenir el teu mòbil segur i sempre accessible.",
+            disc_title: "Col·lecció DISC",
+            disc_subtitle: "Geometria pura i disseny unisex per a l'explorador urbà.",
+            disc_desc: "DISC és un exercici de minimalisme funcional. La seva forma de disc perfecte, realitzada en pell negra mat, ofereix una silueta neta i contundent. La corretja híbrida de pell i niló tècnic garanteix comoditat i durabilitat, mentre que el logo metàl·lic i la cremallera rosa neó aporten el segell inconfusible de X'M.",
             craftsmanship_title: "L'Ànima de l'Artesania",
             craftsmanship_text: "Cada peça X'M es construeix amb paciència i precisió en tallers artesans locals. Seleccionem només els millors materials: pells de napa suau, acrílics polits a mà i llanes pures. La nostra cremallera, amb el seu distintiu rosa neó, no és només un tancament, és una joia dissenyada a mida i banyada en or per garantir una durabilitat i un lliscar perfectes.",
             footer_mission: "Creant objectes de luxe amb una ànima inesperada. Disseny conceptual i artesania per a la dona moderna.",
@@ -53,43 +57,43 @@ document.addEventListener('DOMContentLoaded', function() {
             cart_message: "Diga'ns quin és el teu desig i et direm com el podem fer realitat. Enviem a tot el mon."
         },
         es: {
-            nav_manifesto: "Manifiesto",
             nav_collection: "Colección",
             collection_sphere: "Colección Sphère",
             collection_manchon: "Manchon Connect",
-            manchon_title: "Manchon Connect",
-            manchon_subtitle: "La fusión perfecta entre calidez, tecnología y estilo urbano.",
-            manchon_desc: "La calidez urbana se encuentra con la conectividad en el Manchon Connect. Este diseño reinventa el clásico calentador de manos, ofreciendo un refugio de suave pelo sintético y un innovador bolsillo exterior para mantener tu móvil seguro y siempre accesible.",
+            collection_disc: "Colección DISC",
+            disc_title: "Colección DISC",
+            disc_subtitle: "Geometría pura y diseño unisex para el explorador urbano.",
+            disc_desc: "DISC es un ejercicio de minimalismo funcional. Su forma de disco perfecto, realizada en piel negra mate, ofrece una silueta limpia y contundente. La correa híbrida de piel y nailon técnico garantiza comodidad y durabilidad, mientras que el logo metálico y la cremallera rosa neón aportan el sello inconfundible de X'M.",
             // ...rest of Spanish translations
         },
         fr: {
-            nav_manifesto: "Manifeste",
             nav_collection: "Collection",
             collection_sphere: "Collection Sphère",
             collection_manchon: "Manchon Connect",
-            manchon_title: "Manchon Connect",
-            manchon_subtitle: "La fusion parfaite entre chaleur, technologie et style urbain.",
-            manchon_desc: "La chaleur urbaine rencontre la connectivité dans le Manchon Connect. Ce design réinvente le chauffe-mains classique, offrant un refuge de douce fourrure synthétique et une poche extérieure innovante pour garder votre mobile en sécurité et toujours accessible.",
+            collection_disc: "Collection DISC",
+            disc_title: "Collection DISC",
+            disc_subtitle: "Géométrie pure et design unisexe pour l'explorateur urbain.",
+            disc_desc: "DISC est un exercice de minimalisme fonctionnel. Sa forme de disque parfait, en cuir noir mat, offre une silhouette nette et puissante. La sangle hybride en cuir et nylon technique assure confort et durabilité, tandis que le logo métallique et la fermeture éclair rose néon apportent le sceau inimitable de X'M.",
             // ...rest of French translations
         },
         it: {
-            nav_manifesto: "Manifesto",
             nav_collection: "Collezione",
             collection_sphere: "Collezione Sphère",
             collection_manchon: "Manchon Connect",
-            manchon_title: "Manchon Connect",
-            manchon_subtitle: "La fusione perfetta tra calore, tecnologia e stile urbano.",
-            manchon_desc: "Il calore urbano incontra la connettività nel Manchon Connect. Questo design reinventa il classico scaldamani, offrendo un rifugio di morbida pelliccia sintetica e un'innovativa tasca esterna per tenere il tuo cellulare al sicuro e sempre accessibile.",
+            collection_disc: "Collezione DISC",
+            disc_title: "Collezione DISC",
+            disc_subtitle: "Geometria pura e design unisex per l'esploratore urbano.",
+            disc_desc: "DISC è un esercizio di minimalismo funzionale. La sua forma a disco perfetto, realizzata in pelle nera opaca, offre una silhouette pulita e decisa. La tracolla ibrida in pelle e nylon tecnico garantisce comfort e resistenza, mentre il logo metallico e la cerniera rosa neon aggiungono il sigillo inconfondibile di X'M.",
             // ...rest of Italian translations
         },
         en: {
-            nav_manifesto: "Manifest",
             nav_collection: "Collection",
             collection_sphere: "Sphère Collection",
             collection_manchon: "Manchon Connect",
-            manchon_title: "Manchon Connect",
-            manchon_subtitle: "The perfect fusion of warmth, technology, and urban style.",
-            manchon_desc: "Urban warmth meets connectivity in the Manchon Connect. This design reinvents the classic hand warmer, offering a haven of soft synthetic fur and an innovative outer pocket to keep your mobile safe and always accessible.",
+            collection_disc: "DISC Collection",
+            disc_title: "DISC Collection",
+            disc_subtitle: "Pure geometry and unisex design for the urban explorer.",
+            disc_desc: "DISC is an exercise in functional minimalism. Its perfect disc shape, crafted from matte black leather, offers a clean and powerful silhouette. The hybrid leather and technical nylon strap ensures comfort and durability, while the metallic logo and neon pink zipper provide the unmistakable X'M seal.",
             // ...rest of English translations
         }
     };
@@ -231,3 +235,4 @@ document.addEventListener('DOMContentLoaded', function() {
     revealOnScroll();
 
 });
+
