@@ -60,7 +60,9 @@
 
 <main>
 <section id="hero" class="h-screen w-full flex flex-col items-center justify-center relative text-center text-white overflow-hidden">
-    
+    <div class="absolute inset-0 z-0">
+        <img src="assets/images/hero-bg.jpg" alt="Fons abstracte fosc" class="w-full h-full object-cover opacity-30">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
     </div>
     
     <div class="relative z-10 p-6 pt-24">
@@ -225,7 +227,8 @@ La nostra cremallera, amb el seu distintiu rosa neó, no és només un tancament
 <div id="contact-modal" class="modal-content hidden">
 <button class="modal-close">&times;</button>
 <h2 class="text-3xl font-title mb-6" data-lang="contact_title">Contacte</h2>
-<p id="contact-modal-message" class="text-lg text-gray-300 mb-4"></p> <form id="contact-form" action="https://formspree.io/f/xnnvyzpb" method="POST">
+<p id="contact-modal-message" class="text-lg text-gray-300 mb-4"></p>
+<form id="contact-form" action="https://formspree.io/f/xnnvyzpb" method="POST" data-formspree="json">
 <div class="mb-4">
 <label for="name" class="block text-sm font-medium text-gray-300" data-lang="contact_name">Nom</label>
 <input type="text" id="name" name="name" required class="mt-1 block w-full bg-gray-800 border-gray-700 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-pink-500 focus:border-pink-500">
@@ -246,7 +249,7 @@ La nostra cremallera, amb el seu distintiu rosa neó, no és només un tancament
     <button class="modal-close">&times;</button>
     <h2 class="text-3xl font-title mb-6" data-lang="cart_title">De compres...</h2>
     <p class="text-lg text-gray-300 mb-4" data-lang="cart_message">Digues el teu desig i te'l farem realitat.</p>
-    <form id="cart-form" action="https://formspree.io/f/xnnvyzpb" method="POST">
+    <form id="cart-form" action="https://formspree.io/f/xnnvyzpb" method="POST" data-formspree="json">
         <div class="mb-4">
             <label for="cart-name" class="block text-sm font-medium text-gray-300" data-lang="contact_name">Nom</label>
             <input type="text" id="cart-name" name="name" required class="mt-1 block w-full bg-gray-800 border-gray-700 rounded-md shadow-sm py-2 px-3 text-white focus:outline-none focus:ring-pink-500 focus:border-pink-500">
@@ -306,7 +309,7 @@ Cada col·lecció és un capítol d'aquesta història, una exploració de formes
 <h2 class="text-3xl font-title mb-6" data-lang="sustainability_title">Sostenibilitat</h2>
 <div class="space-y-4 text-gray-300" data-lang="sustainability_content">
 <p>Estem compromesos amb un luxe conscient. Treballem amb tallers locals per minimitzar la nostra petjada de carboni i garantir condicions laborals justes.
-Prioritzem l'ús de materials responsables i busquem constantment maneres d'innovar en sostenibilitat, des del nostre packaging reciclable fins a la selecció de pells de proveïdors certificats.</p>
+Prioritzem l'ús de materials responsables i busquem constantment maneres d'innovar en sostenibilitat, des del nostro packaging reciclable fins a la selecció de pells de proveïdors certificats.</p>
 </div>
 </div>
 
