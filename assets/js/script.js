@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    // --- OBJECTE DE TRADUCCIONS ---
+    // ... (el teu objecte translations complet aquí)
     const translations = {
         ca: {
             nav_manifesto: "Manifest",
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function() {
             niu_title: "Sphère Niu",
             niu_desc: "Un retour à l'essence, enveloppé de fil de laine mérinos XXL. Le luxe est chaleur et confort.",
             manchon_title: "Manchon Connect",
-            manchon_subtitle: "La fusion parfaite entre chaleur, technologie et style urbain.",
+            manchon_subtitle: "La fusió perfecta entre chaleur, technologie et style urbain.",
             manchon_product_title: "Manchon Connect",
             manchon_desc: "La chaleur urbaine rencontre la connectivité dans le Manchon Connect. Ce design réinvente le chauffe-mains classique, offrant un refuge en douce fourrure synthétique et une poche extérieure innovante pour garder votre téléphone en sécurité et toujours accessible.",
             disc_title: "Collection Disc",
@@ -240,11 +240,11 @@ document.addEventListener('DOMContentLoaded', function() {
             cart_message: "Dicci el tuo desiderio e lo renderemo realtà.",
             cart_product: "Prodotto di interesse",
             faq_title: "Domande Frequenti",
-            faq_content: "<strong>Quali sono le opzioni di spedizione?</strong><br>Offriamo spedizione standard ed espressa in tutto el mondo. I costi e i tempi di consegna vengono calcolati al momento del pagamento.<br><br><strong>Posso restituire un prodotto?</strong><br>Sì, acceptem devolucions dins dels 14 dies posteriors a la recepció de la comanda. El producte ha d'estar en perfectes condicions i amb el seu embalatge original.",
+            faq_content: "<strong>Quali sono le opzioni di spedizione?</strong><br>Offriamo spedizione standard ed espressa in tutto el mondo. I costi e i tempi di consegna vengono calcolati al momento del pagamento.<br><br><strong>Posso restituire un prodotto?</strong><br>Sí, acceptem devolucions dins dels 14 dies posteriors a la recepció de la comanda. El producte ha d'estar en perfectes condicions i amb el seu embalatge original.",
             care_title: "Cura del Prodotto",
             care_content: "<p>I nostri pezzi sono realizzati con materiali della più alta qualità. Per mantenere la sua bellezza, evita l'exposición prolongada a la llum solar directa i a la humitat. Guarda el tuo bolso a la seva bossa guardapols quan no l'utilitzes. Per a la neteja, consulta un especialista en tractament de pells.</p>",
             story_title: "La Nostra Storia",
-            story_content: "<p>X'M va néixer d'un desig: el de crear objectes que no només fossin bells, sinó que tinguessin una ànima. La marca busca desafiar la percepció tradicional del luxe, fusionant l'artesanato concettuale amb l'artigianato più meticoloso. Ogni collezione és un capítol de questa història, un'esplorazione de formes, texture ed emozioni.</p>",
+            story_content: "<p>X'M va néixer d'un desig: el de crear objectes que no només fossin bells, sinó que tinguessin una ànima. La marca busca desafiar la percepció tradicional del luxe, fusionant l'artesanato concettuale con l'artigianato più meticoloso. Ogni collezione és un capítol de questa història, un'esplorazione de formes, texture ed emozioni.</p>",
             sustainability_title: "Sostenibilità",
             sustainability_content: "<p>Siamo impegnati in un lusso consapevole. Lavoriamo con laboratori locali per ridurre al minimo la nostra impronta di carbonio e garantire condizioni di lavoro eque. Diamo priorità all'uso di materiali responsabili e cerchiamo costantemente modi per innovare nella sostenibilità, dal nostro imballaggio riciclabile alla selezione di pelli da fornitori certificati.</p>",
             press_title: "Stampa",
@@ -308,7 +308,7 @@ document.addEventListener('DOMContentLoaded', function() {
             story_title: "Our Story",
             story_content: "<p>X'M was born from a desire: to create objects that were not only beautiful, but had a soul. The brand seeks to challenge the traditional perception of luxury, fusing conceptual art with the most meticulous craftsmanship. Each collection is a chapter in this story, an exploration of forms, textures, and emotions.</p>",
             sustainability_title: "Sustainability",
-            sustainability_content: "<p>We are committed to conscious luxury. We work with local workshops to minimize our carbon footprint and ensure fair labor conditions. We prioritize the use of responsible materials and constantly seek ways to innovate in sustainability, from our recyclable packaging to the selection of leathers from certified suppliers.</p>",
+            sustainability_content: "<p>We are committed to conscious luxury. We work with local workshops to minimize our carbon footprint and guarantee fair labor conditions. We prioritize the use of materials responsible and constantly seek ways to innovate in sustainability, from our recyclable packaging to the selection of leathers from certified suppliers.</p>",
             press_title: "Press",
             press_content: "<p>For press inquiries, interviews, or graphic material requests, please contact our communication department at <a href='mailto:press@xm-brand.com' class='text-pink-500 hover:underline'>press@xm-brand.com</a>.</p>"
         }
@@ -470,24 +470,39 @@ document.addEventListener('DOMContentLoaded', function() {
                     body: formData,
                     headers: {
                         'Accept': 'application/json'
-                    }
+                    },
+                    redirect: 'manual' // <--- AFEGIM AQUESTA LÍNIA CLAU
                 });
 
-                // Canvi clau aquí: Formspree amb data-formspree="json" hauria de respondre amb 200 OK.
-                // Verifiquem explícitament el status o response.ok
-                if (response.ok && response.status === 200) { // S'ha afegit response.status === 200
+                // Amb redirect: 'manual', Formspree hauria de respondre amb status 200 (si no hi ha redireccions posteriors)
+                // o 302 si redirigeix. Si és 302, response.ok serà false, però l'enviament haurà estat un èxit.
+                // La forma més fiable és buscar el status 200 de la resposta JSON de Formspree.
+                // En alguns casos, Formspree pot respondre amb 200 directament amb data-formspree="json"
+                // sense una redirecció visible al fetch.
+                if (response.status === 200) { // Canviat de response.ok && response.status === 200
                     alert('Missatge enviat correctament! Gràcies per contactar amb X\'M.');
                     form.reset();
                     closeModal();
                 } else {
-                    // Si response.ok és false o status no és 200, hi ha un error.
-                    // Podem intentar llegir la resposta per a més detalls si n'hi ha.
-                    const errorData = await response.json().catch(() => ({ message: 'Error desconegut.' }));
-                    console.error('Error al enviar el formulario (Formspree response):', response.status, errorData);
-                    alert(`Hi ha hagut un error en enviar el missatge. Si us plau, torna a intentar-ho més tard. Detalls: ${errorData.message || 'Desconegut'}`);
+                    // Intentar obtenir un missatge d'error de la resposta JSON de Formspree
+                    let errorDetails = 'Error desconegut.';
+                    try {
+                        const errorJson = await response.json();
+                        if (errorJson && errorJson.errors) {
+                            errorDetails = errorJson.errors.map(err => err.message).join(', ');
+                        } else if (errorJson && errorJson.message) {
+                            errorDetails = errorJson.message;
+                        }
+                    } catch (jsonError) {
+                        // Si no es pot parsejar el JSON, potser és un error de xarxa o Formspree ha respost diferent.
+                        console.error('No es pot parsejar la resposta d\'error com a JSON:', jsonError);
+                        errorDetails = `Estat HTTP: ${response.status} ${response.statusText}`;
+                    }
+                    console.error('Error al enviar el formulario (Formspree response):', response.status, errorDetails);
+                    alert(`Hi ha hagut un error en enviar el missatge. Si us plau, torna a intentar-ho més tard. Detalls: ${errorDetails}`);
                 }
             } catch (error) {
-                console.error('Error en la connexió al enviar el formulario:', error);
+                console.error('Error en la connexió al enviar el formulario (catch):', error);
                 alert('Hi ha hagut un error en la comunicació. Si us plau, comprova la teva connexió a internet i torna a intentar-ho.');
             }
         });
@@ -509,22 +524,32 @@ document.addEventListener('DOMContentLoaded', function() {
                     body: formData,
                     headers: {
                         'Accept': 'application/json'
-                    }
+                    },
+                    redirect: 'manual' // <--- AFEGIM AQUESTA LÍNIA CLAU
                 });
 
-                // Canvi clau aquí: Formspree amb data-formspree="json" hauria de respondre amb 200 OK.
-                // Verifiquem explícitament el status o response.ok
-                if (response.ok && response.status === 200) { // S'ha afegit response.status === 200
+                if (response.status === 200) { // Canviat de response.ok && response.status === 200
                     alert('La teva sol·licitud ha estat enviada! Aviat ens posarem en contacte amb tu per al teu desig.');
                     form.reset();
                     closeModal();
                 } else {
-                     const errorData = await response.json().catch(() => ({ message: 'Error desconegut.' }));
-                    console.error('Error al enviar la sol·licitud (Formspree response):', response.status, errorData);
-                    alert(`Hi ha hagut un error en enviar la sol·licitud. Si us plau, torna a intentar-ho més tard. Detalls: ${errorData.message || 'Desconegut'}`);
+                    let errorDetails = 'Error desconegut.';
+                    try {
+                        const errorJson = await response.json();
+                        if (errorJson && errorJson.errors) {
+                            errorDetails = errorJson.errors.map(err => err.message).join(', ');
+                        } else if (errorJson && errorJson.message) {
+                            errorDetails = errorJson.message;
+                        }
+                    } catch (jsonError) {
+                        console.error('No es pot parsejar la resposta d\'error com a JSON (carret):', jsonError);
+                        errorDetails = `Estat HTTP: ${response.status} ${response.statusText}`;
+                    }
+                    console.error('Error al enviar la sol·licitud (Formspree response carret):', response.status, errorDetails);
+                    alert(`Hi ha hagut un error en enviar la sol·licitud. Si us plau, torna a intentar-ho més tard. Detalls: ${errorDetails}`);
                 }
             } catch (error) {
-                console.error('Error en la connexió al enviar el formulario del carrito:', error);
+                console.error('Error en la connexió al enviar el formulario del carrito (catch):', error);
                 alert('Hi ha hagut un error en la comunicació. Si us plau, comprova la teva connexió a internet i torna a intentar-ho.');
             }
         });
