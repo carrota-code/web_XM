@@ -496,7 +496,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     } catch (jsonError) {
                         // Si no es pot parsejar el JSON, potser és un error de xarxa o Formspree ha respost diferent.
                         console.error('No es pot parsejar la resposta d\'error com a JSON:', jsonError);
-                        errorDetails = `Estat HTTP: ${response.status} ${response.statusText}`;
+                        errorDetails = `Estat HTTPS: ${response.status} ${response.statusText}`;
                     }
                     console.error('Error al enviar el formulario (Formspree response):', response.status, errorDetails);
                     alert(`Hi ha hagut un error en enviar el missatge. Si us plau, torna a intentar-ho més tard. Detalls: ${errorDetails}`);
@@ -543,7 +543,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         }
                     } catch (jsonError) {
                         console.error('No es pot parsejar la resposta d\'error com a JSON (carret):', jsonError);
-                        errorDetails = `Estat HTTP: ${response.status} ${response.statusText}`;
+                        errorDetails = `Estat HTTPS: ${response.status} ${response.statusText}`;
                     }
                     console.error('Error al enviar la sol·licitud (Formspree response carret):', response.status, errorDetails);
                     alert(`Hi ha hagut un error en enviar la sol·licitud. Si us plau, torna a intentar-ho més tard. Detalls: ${errorDetails}`);
