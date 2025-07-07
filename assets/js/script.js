@@ -212,15 +212,15 @@ document.addEventListener('DOMContentLoaded', function() {
             niu_title: "Sphère Niu",
             niu_desc: "Un ritorno all'essenza, avvolto in filato di lana merino XXL. Il lusso è calore e comfort.",
             manchon_title: "Manchon Connect",
-            manchon_subtitle: "La fusione perfetta tra calore, tecnologia e stile urbano.",
+            manchon_subtitle: "La fusione perfetta entre calore, tecnologia e stile urbano.",
             manchon_product_title: "Manchon Connect",
-            manchon_desc: "Il calore urbano incontra la connettività nel Manchon Connect. Questo design reinventa il classico scaldamani, offrendo un rifugio di morbida pelliccia sintetica e un'innovativa tasca esterna per mantenere il tuo cellulare sicuro e sempre accessibile.",
+            manchon_desc: "Il calore urbano incontra la connettività nel Manchon Connect. Questo design reinventa el classico scaldamani, offrendo un rifugio di morbida pelliccia sintetica e un'innovativa tasca esterna per mantenere el tuo cellulare sicuro e sempre accessibile.",
             disc_title: "Collezione Disc",
             disc_subtitle: "Geometria pura e design unisex per l'esploratore urbano.",
             disc_product_title: "Disc",
-            disc_desc: "Disc è un esercizio di minimalismo funzionale. La sua forma a disco perfetto, realizzata in pelle nera opaca, offre una silhouette pulita e decisa. La tracolla ibrida in pelle e nylon tecnico garantisce comfort e resistenza, mentre il logo in rilievo e la cerniera rosa neon aggiungono il sigillo inconfondibile di X'M.",
+            disc_desc: "Disc è un esercizio di minimalismo funzionale. La sua forma a disco perfetto, realizzata in pelle nera opaca, offre una silhouette pulita e decisa. La tracolla ibrida in pelle e nylon tecnico garantisce comfort e resistenza, mentre il logo in rilievo e la cerniera rosa neon aggiungono el sigillo inconfondibile di X'M.",
             craftsmanship_title: "L'Anima dell'Artigianato",
-            craftsmanship_text: "Ogni pezzo X'M è costruito con pazienza e precisione in laboratori artigianali locali. Selezioniamo solo i migliori materiali: pelli nappa morbide, acrilici lucidati a mano e lane pure. La nostra cerniera, con il suo distintivo rosa neon, non è solo una chiusura, è un gioiello progettato su misura e placcato oro per garantire una durata e uno scorrimento perfetti.",
+            craftsmanship_text: "Ogni pezzo X'M è costruito con pazienza e precisione in laboratori artigianali locali. Selezioniamo solo i migliori materiali: pelli nappa morbide, acrilici lucidati a mano e lane pure. La nostra cerniera, con el suo distintivo rosa neon, non è solo una chiusura, è un gioiello progettato su misura e placcato oro per garantire una durata e uno scorrimento perfetti.",
             footer_mission: "Creando oggetti di lusso con un'anima inaspettata. Design concettuale e artigianato per la donna moderna.",
             footer_help: "Aiuto",
             footer_contact: "Contatto",
@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function() {
             footer_care: "Cura del Prodotto",
             footer_company: "Azienda",
             footer_story: "La Nostra Storia",
-            footer_sustainability: "Sostenibilità",
+            footer_sostenibilità: "Sostenibilità",
             footer_press: "Stampa",
             footer_copyright: "© 2025 X'M. Tutti i diritti riservati.",
             contact_title: "Contatto",
@@ -237,18 +237,18 @@ document.addEventListener('DOMContentLoaded', function() {
             contact_message: "Messaggio",
             contact_send: "Invia Messaggio",
             cart_title: "Shopping...",
-            cart_message: "Dicci il tuo desiderio e lo renderemo realtà.",
+            cart_message: "Dicci el tuo desiderio e lo renderemo realtà.",
             cart_product: "Prodotto di interesse",
             faq_title: "Domande Frequenti",
-            faq_content: "<strong>Quali sono le opzioni di spedizione?</strong><br>Offriamo spedizione standard ed espressa in tutto il mondo. I costi e i tempi di consegna vengono calcolati al momento del pagamento.<br><br><strong>Posso restituire un prodotto?</strong><br>Sì, accettiamo resi entro 14 giorni dalla ricezione dell'ordine. Il prodotto deve essere in perfette condizioni e con il suo imballaggio originale.",
+            faq_content: "<strong>Quali sono le opzioni di spedizione?</strong><br>Offriamo spedizione standard ed espressa in tutto el mondo. I costi e i tempi di consegna vengono calcolati al momento del pagamento.<br><br><strong>Posso restituire un prodotto?</strong><br>Sì, accettiamo resi entro 14 giorni dalla ricezione dell'ordine. El prodotto deve essere in perfette condizioni e con el suo imballaggio originale.",
             care_title: "Cura del Prodotto",
-            care_content: "<p>I nostri pezzi sono realizzati con materiali di altissima qualità. Per mantenere la loro bellezza, evita l'exposició prolongada a la llum solar directa i a la humitat. Guarda el teu bolso a la seva bossa guardapols quan no l'utilitzes. Per a la neteja, consulta un especialista en tractament de pells.</p>",
+            care_content: "<p>I nostri pezzi sono realizzati con materiali della più alta qualità. Per mantenere la sua bellezza, evita l'esposizione prolongada a la llum solar directa i a la humitat. Guarda el tuo bolso a la seva bossa guardapols quan no l'utilitzes. Per a la neteja, consulta un especialista en tractament de pells.</p>",
             story_title: "La Nostra Storia",
-            story_content: "<p>X'M va néixer d'un desig: el de crear objectes que no només fossin bells, sinó que tinguessin una ànima. La marca busca desafiar la percepció tradicional del luxe, fusionant l'artesanato concettuale amb l'artigianato più meticoloso. Ogni collezione és un capítol de questa història, un'esplorazione de formes, texture ed emozioni.</p>",
-            sustainability_title: "Sostenibilità",
-            sustainability_content: "<p>Siamo impegnati in un lusso consapevole. Lavoriamo con laboratori locali per ridurre al minimo la nostra impronta di carbonio e garantire condizioni di lavoro eque. Diamo priorità all'uso di materiali responsabili e cerchiamo costantemente modi per innovare nella sostenibilità, dal nostro imballaggio riciclabile alla selezione di pelli da fornitori certificati.</p>",
+            story_content: "<p>X'M va néixer d'un desig: el de crear objectes que no només fossin bells, sinó que tinguessin una ànima. La marca busca desafiar la percepció tradicional del luxe, fusionant l'artesanato concettuale amb l'artigianato più meticoloso. Ogni collezione és un capítol de aquesta història, un'esplorazione de formes, texture ed emozioni.</p>",
+            sostenibilità_title: "Sostenibilità",
+            sostenibilità_content: "<p>Siamo impegnati in un lusso consapevole. Lavoriamo con laboratori locali per ridurre al minimo la nostra impronta di carbonio e garantire condizioni di lavoro eque. Diamo priorità all'uso di materiali responsabili e cerchiamo costantemente modi per innovare nella sostenibilità, dal nostro imballaggio riciclabile alla selezione di pelli da fornitori certificati.</p>",
             press_title: "Stampa",
-            press_content: "<p>Per richieste stampa, interviste o richieste di materiale grafico, si prega di contattare il nostro ufficio comunicazione a <a href='mailto:press@xm-brand.com' class='text-pink-500 hover:underline'>press@xm-brand.com</a>.</p>"
+            press_content: "<p>Per richieste stampa, interviste o richieste di materiale grafico, si prega di contactare el nostro ufficio comunicazione a <a href='mailto:press@xm-brand.com' class='text-pink-500 hover:underline'>press@xm-brand.com</a>.</p>"
         },
         en: {
             nav_manifesto: "Manifesto",
@@ -276,7 +276,7 @@ document.addEventListener('DOMContentLoaded', function() {
             manchon_title: "Manchon Connect",
             manchon_subtitle: "The perfect fusion of warmth, technology, and urban style.",
             manchon_product_title: "Manchon Connect",
-            manchon_desc: "Urban warmth meets connectivity in the Manchon Connect. This design reinvents the classic hand warmer, offering a sanctuary of soft synthetic fur and an innovative exterior pocket to keep your mobile safe and always accessible.",
+            manchon_desc: "Urban warmth meets connectivity in the Manchon Connect. This design reinventsthe classic hand warmer, offering a sanctuary of soft synthetic fur and an innovative exterior pocket to keep your mobile safe and always accessible.",
             disc_title: "Disc Collection",
             disc_subtitle: "Pure geometry and unisex design for the urban explorer.",
             disc_product_title: "Disc",
@@ -310,7 +310,7 @@ document.addEventListener('DOMContentLoaded', function() {
             sustainability_title: "Sustainability",
             sustainability_content: "<p>We are committed to conscious luxury. We work with local workshops to minimize our carbon footprint and ensure fair labor conditions. We prioritize the use of responsible materials and constantly seek ways to innovate in sustainability, from our recyclable packaging to the selection of leathers from certified suppliers.</p>",
             press_title: "Press",
-            press_content: "<p>For press inquiries, interviews, or graphic material requests, please contact our department of communication at <a href='mailto:press@xm-brand.com' class='text-pink-500 hover:underline'>press@xm-brand.com</a>.</p>"
+            press_content: "<p>For press inquiries, interviews, or graphic material requests, please contact our communication department at <a href='mailto:press@xm-brand.com' class='text-pink-500 hover:underline'>press@xm-brand.com</a>.</p>"
         }
     };
 
@@ -321,7 +321,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function populateProductDropdown() {
         if (!cartProductDropdown) {
              console.warn("Element #cart-product no trobat. No es pot omplir el desplegable de productes.");
-             return; // Sortir si l'element no existeix
+             return;
         }
 
         // Buidar les opcions existents
@@ -333,13 +333,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const products = [];
         productTitles.forEach(el => {
             const key = el.getAttribute('data-lang');
-            // Asegurarse de que el elemento es un título de producto y no de sección general
-            // y que la clave de traducción exista para evitar el error 'undefined'
             if (key.includes('_title') && !['manifesto_title', 'collection_title', 'manchon_title', 'disc_title', 'craftsmanship_title', 'faq_title', 'care_title', 'story_title', 'sustainability_title', 'press_title', 'contact_title', 'cart_title', 'hero_slogan'].includes(key)) {
-                // Utilitza el chaining opcional (?.) per evitar errors si translations[currentLang] és undefined
-                // i un fallback al textContent de l'element si la traducció no existeix
                 let productName = translations[currentLang]?.[key] || translations['ca'][key] || el.textContent;
-                if (productName) { // Assegura't que no afegim opcions buides
+                if (productName) {
                     products.push(productName);
                 }
             }
@@ -411,15 +407,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const elements = document.querySelectorAll('[data-lang]');
         elements.forEach(el => {
             const key = el.getAttribute('data-lang');
-            // Comprovem que existeix la traducció per a l'idioma i la clau
             if (translations[lang] && translations[lang][key]) {
                 el.innerHTML = translations[lang][key];
             } else if (translations['ca'] && translations['ca'][key]) {
-                // Fallback a català si no existeix la traducció en l'idioma actual
                 el.innerHTML = translations['ca'][key];
             }
         });
-        // Actualizar las opciones del desplegable de productos al cambiar de idioma
         populateProductDropdown();
     }
 
@@ -545,7 +538,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     };
     window.addEventListener('scroll', revealOnScroll);
-    revealOnScroll(); // Crida inicial per a elements visibles a la càrrega
+    revealOnScroll();
 
     // --- INICIALITZACIÓ DEL CARRUSEL ---
     const swiperWrapper = document.querySelector('.product-carousel .swiper-wrapper');
@@ -586,7 +579,7 @@ document.addEventListener('DOMContentLoaded', function() {
             loop: true,
             speed: 500,
             autoplay: {
-                delay: 1000,
+                delay: 2500,
                 disableOnInteraction: false,
             },
             coverflowEffect: {
