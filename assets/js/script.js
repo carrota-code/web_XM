@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', function() {
             noir_title: "Sphère Noir",
             noir_desc: "Più che una borsa, una dichiarazione. Rivestita della più morbida pelliccia di coniglio nera, è un'esperienza tattile indimenticabile.",
             icon_title: "Sphère Icon",
-            icon_desc: "Un design grafico che reinterpreta un classico universale sotto il prisma del lusso, alternando pelle nappa bianca e camoscio nero.",
+            icon_desc: "Un design grafico che reinterpreta un classico universale sotto el prisma del lusso, alternando pelle nappa bianca e camoscio nero.",
             lucid_title: "Sphère Lucid",
             lucid_desc: "Un esercizio di onestà radicale. Una sfera in acrilico trasparente per la donna che non ha nulla da nascondere.",
             strike_title: "Sphère Strike",
@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function() {
             disc_title: "Collezione Disc",
             disc_subtitle: "Geometria pura e design unisex per l'esploratore urbano.",
             disc_product_title: "Disc",
-            disc_desc: "Disc è un esercizio di minimalismo funzionale. La sua forma a disco perfetto, realizzata in pelle nera opaca, offre una silhouette pulita e decisa. La tracolla ibrida in pelle e nylon tecnico garantisce comfort e resistenza, mentre il logo in rilievo e la cerniera rosa neon aggiungono el sigillo inconfondibile di X'M.",
+            disc_desc: "Disc è un esercizio di minimalismo funzionale. La sua forma a disco perfetto, realizzata in pelle nera opaca, offre una silhouette pulita e decisa. La tracolla ibrida in pelle e nylon tecnico garantisce comfort e resistenza, mentre el logo in rilievo e la cerniera rosa neon aggiungono el sigillo inconfondibile di X'M.",
             craftsmanship_title: "L'Anima dell'Artigianato",
             craftsmanship_text: "Ogni pezzo X'M è costruito con pazienza e precisione in laboratori artigianali locali. Selezioniamo solo i migliori materiali: pelli nappa morbide, acrilici lucidati a mano e lane pure. La nostra cerniera, con el suo distintivo rosa neon, non è solo una chiusura, è un gioiello progettato su misura e placcato oro per garantire una durata e uno scorrimento perfetti.",
             footer_mission: "Creando oggetti di lusso con un'anima inaspettata. Design concettuale e artigianato per la donna moderna.",
@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function() {
             footer_care: "Cura del Prodotto",
             footer_company: "Azienda",
             footer_story: "La Nostra Storia",
-            footer_sostenibilità: "Sostenibilità",
+            footer_sustainability: "Sostenibilità",
             footer_press: "Stampa",
             footer_copyright: "© 2025 X'M. Tutti i diritti riservati.",
             contact_title: "Contatto",
@@ -240,13 +240,13 @@ document.addEventListener('DOMContentLoaded', function() {
             cart_message: "Dicci el tuo desiderio e lo renderemo realtà.",
             cart_product: "Prodotto di interesse",
             faq_title: "Domande Frequenti",
-            faq_content: "<strong>Quali sono le opzioni di spedizione?</strong><br>Offriamo spedizione standard ed espressa in tutto el mondo. I costi e i tempi di consegna vengono calcolati al momento del pagamento.<br><br><strong>Posso restituire un prodotto?</strong><br>Sì, accettiamo resi entro 14 giorni dalla ricezione dell'ordine. El prodotto deve essere in perfette condizioni e con el suo imballaggio originale.",
+            faq_content: "<strong>Quali sono le opzioni di spedizione?</strong><br>Offriamo spedizione standard ed espressa in tutto el mondo. I costi e i tempi di consegna vengono calcolati al momento del pagamento.<br><br><strong>Posso restituire un prodotto?</strong><br>Sì, acceptem devolucions dins dels 14 dies posteriors a la recepció de la comanda. El producte ha d'estar en perfectes condicions i amb el seu embalatge original.",
             care_title: "Cura del Prodotto",
-            care_content: "<p>I nostri pezzi sono realizzati con materiali della più alta qualità. Per mantenere la sua bellezza, evita l'esposizione prolongada a la llum solar directa i a la humitat. Guarda el tuo bolso a la seva bossa guardapols quan no l'utilitzes. Per a la neteja, consulta un especialista en tractament de pells.</p>",
+            care_content: "<p>I nostri pezzi sono realizzati con materiali della più alta qualità. Per mantenere la sua bellezza, evita l'exposición prolongada a la llum solar directa i a la humitat. Guarda el tuo bolso a la seva bossa guardapols quan no l'utilitzes. Per a la neteja, consulta un especialista en tractament de pells.</p>",
             story_title: "La Nostra Storia",
-            story_content: "<p>X'M va néixer d'un desig: el de crear objectes que no només fossin bells, sinó que tinguessin una ànima. La marca busca desafiar la percepció tradicional del luxe, fusionant l'artesanato concettuale amb l'artigianato più meticoloso. Ogni collezione és un capítol de aquesta història, un'esplorazione de formes, texture ed emozioni.</p>",
-            sostenibilità_title: "Sostenibilità",
-            sostenibilità_content: "<p>Siamo impegnati in un lusso consapevole. Lavoriamo con laboratori locali per ridurre al minimo la nostra impronta di carbonio e garantire condizioni di lavoro eque. Diamo priorità all'uso di materiali responsabili e cerchiamo costantemente modi per innovare nella sostenibilità, dal nostro imballaggio riciclabile alla selezione di pelli da fornitori certificati.</p>",
+            story_content: "<p>X'M va néixer d'un desig: el de crear objectes que no només fossin bells, sinó que tinguessin una ànima. La marca busca desafiar la percepció tradicional del luxe, fusionant l'artesanato concettuale amb l'artigianato più meticoloso. Ogni collezione és un capítol de questa història, un'esplorazione de formes, texture ed emozioni.</p>",
+            sustainability_title: "Sostenibilità",
+            sustainability_content: "<p>Siamo impegnati in un lusso consapevole. Lavoriamo con laboratori locali per ridurre al minimo la nostra impronta di carbonio e garantire condizioni di lavoro eque. Diamo priorità all'uso di materiali responsabili e cerchiamo costantemente modi per innovare nella sostenibilità, dal nostro imballaggio riciclabile alla selezione di pelli da fornitori certificati.</p>",
             press_title: "Stampa",
             press_content: "<p>Per richieste stampa, interviste o richieste di materiale grafico, si prega di contactare el nostro ufficio comunicazione a <a href='mailto:press@xm-brand.com' class='text-pink-500 hover:underline'>press@xm-brand.com</a>.</p>"
         },
@@ -473,15 +473,21 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 });
 
-                if (response.ok) {
+                // Canvi clau aquí: Formspree amb data-formspree="json" hauria de respondre amb 200 OK.
+                // Verifiquem explícitament el status o response.ok
+                if (response.ok && response.status === 200) { // S'ha afegit response.status === 200
                     alert('Missatge enviat correctament! Gràcies per contactar amb X\'M.');
                     form.reset();
                     closeModal();
                 } else {
-                    alert('Hi ha hagut un error en enviar el missatge. Si us plau, torna a intentar-ho més tard.');
+                    // Si response.ok és false o status no és 200, hi ha un error.
+                    // Podem intentar llegir la resposta per a més detalls si n'hi ha.
+                    const errorData = await response.json().catch(() => ({ message: 'Error desconegut.' }));
+                    console.error('Error al enviar el formulario (Formspree response):', response.status, errorData);
+                    alert(`Hi ha hagut un error en enviar el missatge. Si us plau, torna a intentar-ho més tard. Detalls: ${errorData.message || 'Desconegut'}`);
                 }
             } catch (error) {
-                console.error('Error al enviar el formulario:', error);
+                console.error('Error en la connexió al enviar el formulario:', error);
                 alert('Hi ha hagut un error en la comunicació. Si us plau, comprova la teva connexió a internet i torna a intentar-ho.');
             }
         });
@@ -506,15 +512,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 });
 
-                if (response.ok) {
+                // Canvi clau aquí: Formspree amb data-formspree="json" hauria de respondre amb 200 OK.
+                // Verifiquem explícitament el status o response.ok
+                if (response.ok && response.status === 200) { // S'ha afegit response.status === 200
                     alert('La teva sol·licitud ha estat enviada! Aviat ens posarem en contacte amb tu per al teu desig.');
                     form.reset();
                     closeModal();
                 } else {
-                    alert('Hi ha hagut un error en enviar la sol·licitud. Si us plau, torna a intentar-ho més tard.');
+                     const errorData = await response.json().catch(() => ({ message: 'Error desconegut.' }));
+                    console.error('Error al enviar la sol·licitud (Formspree response):', response.status, errorData);
+                    alert(`Hi ha hagut un error en enviar la sol·licitud. Si us plau, torna a intentar-ho més tard. Detalls: ${errorData.message || 'Desconegut'}`);
                 }
             } catch (error) {
-                console.error('Error al enviar el formulario del carrito:', error);
+                console.error('Error en la connexió al enviar el formulario del carrito:', error);
                 alert('Hi ha hagut un error en la comunicació. Si us plau, comprova la teva connexió a internet i torna a intentar-ho.');
             }
         });
